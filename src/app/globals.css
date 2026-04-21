@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --background: 7 10 20;
+  --foreground: 238 242 247;
+  --panel: 14 18 32;
+  --panel-2: 19 24 40;
+  --border: 26 32 48;
+  --brand: 59 130 246;
+}
+
+html,
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+}
+
+/* Long USOAP guidance text wraps cleanly without overflowing cards. */
+.prose-tight p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+::selection {
+  background-color: rgba(59, 130, 246, 0.35);
+  color: rgb(238 242 247);
+}
+
+/* Tighter scrollbar against the ink base on WebKit. */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--border));
+  border-radius: 6px;
+  border: 2px solid rgb(var(--background));
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3142;
+}

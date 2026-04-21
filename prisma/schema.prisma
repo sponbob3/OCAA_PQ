@@ -1,0 +1,128 @@
+// USOAP CMA Tracker schema
+//
+// Postgres for dev and prod. Local dev runs Postgres via docker compose
+// (see docker-compose.yml); prod runs on any managed Postgres (Vercel
+// Postgres, Neon, Supabase, etc.).
+//
+// DATABASE_URL is the pooled connection used at runtime. DIRECT_URL bypasses
+// the pooler and is used by Prisma Migrate. Both point at the same database;
+// for Docker dev they can be identical because there's no pgbouncer in the
+// way. Pooled hosts (Neon, Vercel Postgres) require them to differ.
+
+generator client {
+  provider      = "prisma-client-js"
+  // `native` keeps dev fast on whatever host the developer is on; the rhel
+  // target covers Vercel's AL2023 runtime. Without the rhel target Prisma
+  // can fail to locate the query engine binary on Vercel after a cache hit.
+  binaryTargets = ["native", "rhel-openssl-3.0.x"]
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+// A single Protocol Question. Fields A-G come from the ICAO source sheet
+// (immutable, never edited by OCAA). Fields H+ are OCAA response fields.
+model ProtocolQuestion {
+  id                   String  @id @default(cuid())
+  // Audit area the PQ belongs to. "PEL" for now. Future: LEG, ORG, OPS, AIR, AIG, ANS, AGA.
+  auditArea            String  @default("PEL")
+  pqNo                 String  @unique // e.g. "3.001"
+  ce                   String // e.g. "CE-2"
+  question             String
+  // JSON-encoded string[]. Kept as a TEXT column (not Postgres JSONB) because
+  // the guidance / ICAO reference arrays are small, write-once on seed, and
+  // never queried into. Using TEXT keeps the seed payload shape trivial and
+  // matches what the app already expects via `hydratePQ` in src/lib/types.ts.
+  guidanceJson         String  @default("[]")
+  icaoReferencesJson   String  @default("[]")
+  isPPQ                Boolean @default(false)
+  amendmentDescription String?
+
+  // OCAA response fields (columns H-P in the source)
+  status                 Status  @default(NOT_STARTED)
+  statusOfImplementation String?
+  mainResponsibility     String?
+  partResponsibility     String?
+  fcl                    String?
+  aw                     String?
+  atc                    String?
+  med                    String?
+  workRequired           String?
+  briefOnWorkRequired    String?
+  internalNotes          String?
+
+  evidenceLinks EvidenceLink[]
+  statusHistory StatusHistory[]
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  updatedById String?
+  updatedBy   User?    @relation("PQUpdatedBy", fields: [updatedById], references: [id])
+
+  @@index([ce])
+  @@index([status])
+  @@index([isPPQ])
+  @@index([auditArea])
+}
+
+enum Status {
+  NOT_STARTED
+  IN_PROGRESS
+  NEEDS_WORK
+  UNDER_REVIEW
+  COMPLETE
+}
+
+// Evidence attached to a PQ. Usually a URL to a document in OCAA's DMS,
+// SharePoint, or a regulation portal. We also allow inline descriptions.
+model EvidenceLink {
+  id          String           @id @default(cuid())
+  pq          ProtocolQuestion @relation(fields: [pqId], references: [id], onDelete: Cascade)
+  pqId        String
+  label       String
+  url         String
+  description String?
+  createdAt   DateTime         @default(now())
+  createdById String?
+  createdBy   User?            @relation("EvidenceCreatedBy", fields: [createdById], references: [id])
+
+  @@index([pqId])
+}
+
+// Audit trail for status changes. One row per transition.
+model StatusHistory {
+  id          String           @id @default(cuid())
+  pq          ProtocolQuestion @relation(fields: [pqId], references: [id], onDelete: Cascade)
+  pqId        String
+  fromStatus  Status?
+  toStatus    Status
+  note        String?
+  changedAt   DateTime         @default(now())
+  changedById String?
+  changedBy   User?            @relation("HistoryChangedBy", fields: [changedById], references: [id])
+
+  @@index([pqId])
+  @@index([changedAt])
+}
+
+// Lightweight user. Plug in NextAuth later and keep this as the profile record.
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  role      Role     @default(EDITOR)
+  createdAt DateTime @default(now())
+
+  pqUpdates       ProtocolQuestion[] @relation("PQUpdatedBy")
+  evidenceCreated EvidenceLink[]     @relation("EvidenceCreatedBy")
+  statusChanges   StatusHistory[]    @relation("HistoryChangedBy")
+}
+
+enum Role {
+  ADMIN
+  EDITOR
+  VIEWER
+}

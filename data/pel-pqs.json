@@ -1,0 +1,3296 @@
+{
+  "metadata": {
+    "audit_area": "PEL",
+    "audit_area_full": "Personnel Licensing",
+    "source_file": "PEL_PQs_ATC_14-04-26.xlsx",
+    "total_pqs": 100,
+    "ppq_count": 34
+  },
+  "criticalElements": [
+    {
+      "id": "CE-2",
+      "description": "Specific operating regulations",
+      "pqCount": 12,
+      "ppqCount": 5
+    },
+    {
+      "id": "CE-3",
+      "description": "State system and functions",
+      "pqCount": 6,
+      "ppqCount": 1
+    },
+    {
+      "id": "CE-4",
+      "description": "Qualified technical personnel",
+      "pqCount": 8,
+      "ppqCount": 0
+    },
+    {
+      "id": "CE-5",
+      "description": "Technical guidance, tools and safety-critical information",
+      "pqCount": 13,
+      "ppqCount": 2
+    },
+    {
+      "id": "CE-6",
+      "description": "Licensing, certification, authorization and approval",
+      "pqCount": 40,
+      "ppqCount": 22
+    },
+    {
+      "id": "CE-7",
+      "description": "Surveillance obligations",
+      "pqCount": 14,
+      "ppqCount": 4
+    },
+    {
+      "id": "CE-8",
+      "description": "Resolution of safety concerns",
+      "pqCount": 7,
+      "ppqCount": 0
+    }
+  ],
+  "pqs": [
+    {
+      "pqNo": "3.001",
+      "ce": "CE-2",
+      "question": "Has the State promulgated specific operating regulations to transpose the provisions of Annex 1?",
+      "guidance": [
+        "1) Confirm the title, date of promulgation and the latest amendment of all regulations related to personnel licensing.",
+        "2) Verify that the contents of the regulations are consistent, sufficient and properly organized.",
+        "3) Confirm the transposition of the personnel licensing related provisions for:",
+        "a) all licences and ratings, including remote pilot licences;",
+        "b) medical assessment;",
+        "c) approval of training organizations;",
+        "d) qualification/approval of flight simulation training devices; and",
+        "e) language used for radiotelephony communications (i.e. language proficiency requirements)."
+      ],
+      "icaoReferences": [
+        "CC",
+        "Arts. 12 & 37",
+        "STD",
+        "A19",
+        "3.2.2",
+        "GM",
+        "Doc 9734",
+        "Part A, C2"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": "Guidance revised for clarity. Reference revised.",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": "SRD",
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "No major differences. Work required to address the revised guidance and references.",
+        "briefOnWorkRequired": "Oman Civil Aviation Authority has promulgated the regulations for all types of ANNEX1 personal licenses and it functions in accordance with annex 1 licensing functions . The related regulations are the car FCL the car atco and for the maintenance technicians that cover all aspects of knowledge experience and skill requirements . As required the approval of training courses and training organizations and the approval of flight simulation and simulation devices and the approval of language assessment bodies is also carried out ."
+      }
+    },
+    {
+      "pqNo": "3.003",
+      "ce": "CE-2",
+      "question": "In addition to the promulgated regulations, has the Licensing Authority issued orders, directives and/or instructions in support of its personnel licensing activities?",
+      "guidance": [
+        "1) Confirm the title, content and date of issuance of the last amendment to orders, directives and instructions.",
+        "2) Verify approval process and enforceability."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part I, C3"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": "SRD",
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.005",
+      "ce": "CE-2",
+      "question": "Has the State implemented procedures for amending its specific PEL regulations, taking into consideration ICAO provisions and their amendments?",
+      "guidance": [
+        "1) Review documented evidence of effective implementation of procedures for amending PEL regulations.",
+        "2) Verify that regulations are amended in a timely manner whenever amendments to Annex 1 are received.",
+        "3) Verify the action taken by the State after receipt of the latest amendments to Annex 1.",
+        "Note to the auditor:",
+        "The establishment of amendment procedures is addressed in LEG PQ 1.009."
+      ],
+      "icaoReferences": [
+        "CC",
+        "Art. 37",
+        "STD",
+        "A19",
+        "3.2.2",
+        "GM",
+        "Doc 9734",
+        "Part A, C3"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "Guidance revised for clarity.",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": "SRD",
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "Only guidance has been revised for clarity purposes. No major work required.",
+        "briefOnWorkRequired": "The safety regulation department looks after any ICAO amendments that they are implemented and responded immediately in coordination with the specific ."
+      }
+    },
+    {
+      "pqNo": "3.007",
+      "ce": "CE-2",
+      "question": "Has the State implemented procedures for identifying and notifying differences if any, to ICAO?",
+      "guidance": [
+        "1) Review documented evidence of effective implementation.",
+        "2) Confirm that:",
+        "a) the differences between the SARPs and the State legislation and practices are identified and notified to ICAO using the Compliance Checklist/Electronic Filing of Differences (CC/EFOD) system; and",
+        "b) significant differences between SARPs/PANS/SUPPS and the State regulations and practices are identified and published in the AIP.",
+        "Note to the auditor:",
+        "The establishment of these procedures is addressed in LEG PQ 1.025."
+      ],
+      "icaoReferences": [
+        "CC",
+        "Arts. 12, 37 & 38",
+        "STD",
+        "A15",
+        "5.2.2",
+        "A19",
+        "3.2.2",
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 10055"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": "Guidance revised for clarity. Reference revised.",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": "SRD",
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "Mostly the work on this PQ will be from the SRD in conjumction with PEL",
+        "briefOnWorkRequired": "The matter related to notifying differences if any with ICAO are taken up by the safety regulation department in coordination with the specific department of the Civil Aviation Authority . The process is carried forward in accordance with the established procedures ."
+      }
+    },
+    {
+      "pqNo": "3.015",
+      "ce": "CE-2",
+      "question": "Has the State implemented procedures for granting exemptions in the area of personnel licensing?",
+      "guidance": [
+        "1) Verify implementation of procedures for recording and publishing exemptions granted.",
+        "2) Review examples of exemptions granted in the area of personnel licensing.",
+        "3) Verify implementation of the risk assessment system before granting of exemption.",
+        "Notes to the auditor:",
+        "1) The term “exemptions” also includes exceptions, deviations, variations and prolonged extensions.",
+        "2) The legal basis for the granting of exemptions is addressed in LEG PQ 1.027.",
+        "3) The establishment of a policy and procedures for granting exemptions is addressed in LEG PQ 1.028."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A19",
+        "3.2.2 & 3.2.5",
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part I, 3.3.3"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": "SRD",
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.101",
+      "ce": "CE-3",
+      "question": "Has the State established an organizational structure for personnel licensing?",
+      "guidance": [
+        "Evaluate current approved organizational structure for CAA and personnel licensing office, including lines of responsibility.",
+        "Note to the auditor:",
+        "This PQ is not linked to ORG PQ 2.010."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A19",
+        "3.2.3.1 & App. 1, 3.1",
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part I, C1"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.103",
+      "ce": "CE-3",
+      "question": "Are the functions and responsibilities of the personnel licensing office clearly defined?",
+      "guidance": [
+        "Review the document detailing functions and responsibilities of the PEL Office."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9379",
+        "Part I, C2"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.105",
+      "ce": "CE-3",
+      "question": "Have job descriptions been established for technical personnel and key management personnel of the personnel licensing office?",
+      "guidance": [
+        "1) Review job descriptions for all personnel licensing staff.",
+        "2) Check the job description including all tasks related to Annex 1 (e.g. licensing, medical, training organizations approval and surveillance)."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part I, C2 & App. A"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.109",
+      "ce": "CE-3",
+      "question": "Does the personnel licensing office have sufficient human resources to carry out its functions and mandate?",
+      "guidance": [
+        "1) Review methodology established for determining staffing needs, if available.",
+        "2) Review the ability to attract new officers as well as existing vacancies and level of turnover in the past years.",
+        "3) Review ability to carry out all safety oversight-related tasks, including:",
+        "a) reviewing and revising regulations;",
+        "b) training of technical staff;",
+        "c) development of guidance material;",
+        "d) issuance of licences and rating;",
+        "e) conducting surveillance; and",
+        "f) resolving identified safety concerns."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C2 & C3",
+        "Doc 9379",
+        "Part I, C2"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.111",
+      "ce": "CE-4",
+      "question": "Has the State established appropriate minimum qualification and experience requirements for its personnel licensing staff?",
+      "guidance": [
+        "Review qualification and experience requirements for recruitment and assignment of personnel licensing staff of the Licensing Authority depending on their responsibilities in the personnel licensing issuance process and oversight system."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part I, C2"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.112",
+      "ce": "CE-4",
+      "question": "Does the State ensure that all personnel licensing staff meet the established minimum qualification and experience requirements?",
+      "guidance": [
+        "1) Sample recruitment files.",
+        "2) Cross-check with established requirements."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part I, 2.4, 2.5 & 2.6"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.113",
+      "ce": "CE-4",
+      "question": "Is a formal training programme established that details the type of training that should be provided to personnel licensing inspectorate staff and other technical personnel?",
+      "guidance": [
+        "1) Review contents of training programme for",
+        "a) each job (inspectorate staff and other technical personnel); and",
+        "b) all activities (i.e. issuance of all licences, medical, training organizations approval).",
+        "2) Confirm inclusion of:",
+        "a) initial;",
+        "b) on-the-job;",
+        "c) recurrent; and",
+        "d) specialized training, with timelines to be provided, as applicable."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part I, C2"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.114",
+      "ce": "CE-3",
+      "question": "Have personnel licensing staff been issued credentials to facilitate access to aircraft, aviation facilities and documents for the purpose of inspections and enforcement?",
+      "guidance": [
+        "Review credentials to ensure:",
+        "1) reference to empowering legislation;",
+        "2) method established to control currency of credential; and",
+        "3) inspector's photo.",
+        "Note to the auditor:",
+        "This PQ is not applicable to all personnel licensing staff; only applicable to those performing inspection and enforcement activities."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.115",
+      "ce": "CE-4",
+      "question": "Has a periodic training plan been established and implemented, which details and prioritizes the type of training that will be provided to personnel licensing inspectorate staff and other technical personnel during the established period?",
+      "guidance": [
+        "1) Review the most recent training plan for each inspectorate staff and other technical personnel.",
+        "2) Check training files.",
+        "3) Verify that the type and frequency of training that has been successfully completed (initial, recurrent, specialized and OJT) are sufficient for the inspectorate staff and other technical personnel to acquire/maintain the required level of knowledge, skills and qualifications in accordance with their assigned duties and responsibilities.",
+        "4) The training plan should reflect, for each inspectorate staff and other technical personnel, the schedule for implementing the training programme in the following year(s)."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part I, 2.2.4"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.119",
+      "ce": "CE-4",
+      "question": "Has a system been established to maintain the training records of personnel licensing staff?",
+      "guidance": [
+        "1) Review requirements/instructions for the establishment and maintenance of training records.",
+        "2) Verify that the system in place complies with system description.",
+        "3) Verify that training records are systematically retained."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9379",
+        "Part I, 2.2.4"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.153",
+      "ce": "CE-5",
+      "question": "Are the relevant ICAO documents and other technical publications readily available to the personnel licensing inspectorate staff and other technical personnel?",
+      "guidance": [
+        "1) Evaluate method to ensure receipt, control and distribution of the necessary technical documentation.",
+        "2) Evaluate method to determine currency of documents.",
+        "3) Verify accessibility of documents and that they are up to date:",
+        "a) State laws and regulations;",
+        "b) orders and instructions;",
+        "c) current copy of Annex 1; and",
+        "d) copies of ICAO guidance material (i.e. Doc 9379, Doc 9841, Doc 9625, etc.).",
+        "Note to the auditor:",
+        "Check for field/regional offices as well as headquarters."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.154",
+      "ce": "CE-5",
+      "question": "Is there a technical library available for the staff of the personnel licensing office or another method to ensure receipt, control and distribution of the necessary technical documentation?",
+      "guidance": [
+        "Evaluate:",
+        "1) document receipt, control, and distribution system; and",
+        "2) method to determine currency of documents."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.155",
+      "ce": "CE-5",
+      "question": "Are personnel licensing staff provided with comprehensive guidance material and procedures that are sufficiently detailed to enable them to carry out their functions and responsibilities effectively?",
+      "guidance": [
+        "1) Review the PEL Procedures Manual, if available, or the list of procedures available.",
+        "2) Review",
+        "a) management process; and",
+        "b) distribution process of the documents used to ensure that all staff use comprehensive and up-to-date documents."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part II, C1"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.201",
+      "ce": "CE-5",
+      "question": "Has the State established methods to inform applicants of the:",
+      "guidance": [
+        "1) Review available methods for informing applicants of the different licences and ratings.",
+        "2) Review list of application forms for all types of licences, ratings or examinations.",
+        "3) Review the forms to ensure that they contain information relating to age, knowledge, experience, skills and medical information of the applicant."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part I, 3.7 & 3.8"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.203",
+      "ce": "CE-6",
+      "question": "Does the State implement a process for the systematic review and evaluation of submitted application forms for the issuance of licences and ratings and for examinations?",
+      "guidance": [
+        "1) Applies to all types of licences, ratings and examinations.",
+        "2) Review implementation of processes and procedures for the evaluation of applications for licences, ratings or examinations.",
+        "3) Review responsibilities of PEL staff in assessing documents provided by applicants (e.g. different steps, who is doing what).",
+        "4) Sample cases for review."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part II, 2.3, 2.4 & 2.5"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.207",
+      "ce": "CE-5",
+      "question": "Has the State established a procedure for appealing the Licensing Authority’s decisions?",
+      "guidance": [
+        "1) Review documented description of the appeal process.",
+        "2) Review established and documented processes and procedures.",
+        "3) Review documented procedure used to inform the applicant of the appeal process for licences, ratings, examinations and medical decisions."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part II, 8.3"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "Guidance revised for clarity.",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "Guidance revised only for clarity and may not require a major work",
+        "briefOnWorkRequired": "The process for appealing for the licensing authority decisions is well documented and usually the need only arises when there is a difference of understanding of regulations which is visibly taken care of by the proper interpretation of the regulations ."
+      }
+    },
+    {
+      "pqNo": "3.253",
+      "ce": "CE-2",
+      "question": "Has the State promulgated regulations to ensure that privileges granted by a pilot licence, or by related ratings, are not exercised unless the holder maintains competency and meets requirements for recency of experience?",
+      "guidance": [
+        "1) Verify regulations for all pilot licences and ratings issued, including instructor rating (e.g. list, conditions of issuance and renewal, maintenance of competency, recency of experience, etc.).",
+        "2) Ensure that such requirements also apply if a pilot is not employed by a commercial air operator."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.5",
+        "GM",
+        "Doc 9379",
+        "Part II, 3.2"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.256",
+      "ce": "CE-5",
+      "question": "Has the State established a system to re-establish or reinstate the privileges of expired licences and ratings?",
+      "guidance": [
+        "1) Review documented requirements (e.g. number of hours of mandatory re-training, examinations, etc.) to reinstate the privileges of expired licences and ratings.",
+        "2) Review documented process and procedures to reinstate the privileges of expired licences and ratings",
+        "Note to auditor:",
+        "The implementation of a system to re-establish or reinstate the privileges of expired licences and ratings is addressed in PEL PQ 3.257 (CE-6)."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.5",
+        "GM",
+        "Doc 9379",
+        "Part II, C4 & C7"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.257",
+      "ce": "CE-6",
+      "question": "Has the State implemented a system to re-establish or reinstate the privileges of expired licences and ratings?",
+      "guidance": [
+        "1) Review implementation of requirements (e.g. number of hours of mandatory re-training, examinations, etc.) to reinstate the privileges of expired licences and ratings.",
+        "2) Review implementation of procedure to reinstate the privileges of expired licences and ratings.",
+        "3) Sample cases to confirm effective implementation.",
+        "Note to auditor:",
+        "The establishment of this system is addressed in PEL PQ 3.256 (CE-5)."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.5",
+        "GM",
+        "Doc 9379",
+        "Part II, C4 & C7"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.259",
+      "ce": "CE-6",
+      "question": "If the State issues civil licences to military pilots, has a system been implemented for",
+      "guidance": [
+        "1) Review the rules and procedures followed for the conversion of military qualifications and experience to equivalent civil licences and ratings.",
+        "2) Sample cases for review to confirm effective implementation.",
+        "Note to the auditor:",
+        "The establishment of a policy and procedures for granting exemptions is addressed in LEG PQ 1.028."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A19",
+        "3.2.2 & 3.2.5",
+        "GM",
+        "Doc 9379",
+        "Part II, 2.5"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.261",
+      "ce": "CE-7",
+      "question": "Has the State systematically implemented a process for the renewal of licences and ratings?",
+      "guidance": [
+        "1) Review procedures and conditions for the renewal of licences issued.",
+        "2) Review the competency requirements such as recent experience requirements, recurrent training and testing.",
+        "3) Confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.5",
+        "GM",
+        "Doc 9379",
+        "Part II, C2 & C3"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.263",
+      "ce": "CE-8",
+      "question": "What action does the Licensing Authority take in the event that sufficient evidence exists to demonstrate that a pilot licence holder has not performed his/her duties in accordance with the prescribed procedures and privileges of his/her licence?",
+      "guidance": [
+        "1) Review enforcement system or procedures.",
+        "2) Review evidence to confirm effective implementation of a graduated response system (warnings, sanctions)."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.301",
+      "ce": "CE-6",
+      "question": "Has the State implemented procedures for the issuance of pilot licences and ratings on the basis of foreign licences (licence conversion)?",
+      "guidance": [
+        "1) Review the established procedures for the conversion of a foreign licence.",
+        "2) Review evidence to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.2 & 2.1",
+        "GM",
+        "Doc 9379",
+        "Part II, 2.3 & C4"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": "Guidance revised for clarity. Reference revised.",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "The exisitng procedures cover the revised guidance. The revision is only for clarity.",
+        "briefOnWorkRequired": "Civil Aviation Authority Oman has well documented and well implemented procedures for the conversion of licenses that meets the ICAO guidance in document 9379 and further elaborated in the specific licensing regulations which specifically require the verification of the foreign licenses from the state authorities that have issued the licenses in the first place ."
+      }
+    },
+    {
+      "pqNo": "3.302",
+      "ce": "CE-2",
+      "question": "Has the State promulgated regulations for the conversion/validation of all type of licences, other than pilot licences?",
+      "guidance": [
+        "Verify regulations and additional requirements for conversion/validation of licences other than pilot licences."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.2, C3 & C4",
+        "GM",
+        "Doc 9379",
+        "Part I, C3 & C4",
+        "Part II, C2 & C3"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "Guidance revised for clarity. Reference revised.",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "The exisitng procedures cover the revised guidance. The revision is only for clarity.",
+        "briefOnWorkRequired": "The civilization authority Oman has well documented and well implemented regulations for all types of licenses to be converted from on the basis of foreign licenses ."
+      }
+    },
+    {
+      "pqNo": "3.303",
+      "ce": "CE-6",
+      "question": "Has the State implemented procedures for the validation of foreign pilot licences and ratings?",
+      "guidance": [
+        "1) Review the established procedures for the validation of a foreign licence.",
+        "2) Review evidence to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9379",
+        "Part II, C2 & C4"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": "Guidance revised for clarity. Reference revised.",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "The exisitng procedures cover the revised guidance. The revision is only for clarity.",
+        "briefOnWorkRequired": "Basically this matter pertains to the provision in annex one regarding rendering valid the foreign licenses . Usually as the best practice and as the market practice this provision is used for for validating pilots licenses on the basis of their original foreign state issued licenses ."
+      }
+    },
+    {
+      "pqNo": "3.305",
+      "ce": "CE-2",
+      "question": "Has the State promulgated regulations for the conversion/validation of the commercial pilot, multi-crew pilot and airline transport pilot licences that are used for air transport purposes?",
+      "guidance": [
+        "Verify regulations and additional requirements for the conversion/validation of these licences."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.2, 2.1, App. 3 & Att. B",
+        "GM",
+        "Doc 9379",
+        "Part I, C3 & C4",
+        "Part II, C2"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.307",
+      "ce": "CE-6",
+      "question": "Does the Licensing Authority contact the foreign licence issuing State systematically to ensure the validity of the licence to be converted or validated?",
+      "guidance": [
+        "1) Review implementation of process and procedures for confirmation of the validity of the foreign licence.",
+        "2) Review evidence to confirm effective implementation for all types of licences.",
+        "Note to the auditor:",
+        "Contacting the issuing State is the best methodology, but other processes and procedures may be available."
+      ],
+      "icaoReferences": [
+        "CC",
+        "Art. 33",
+        "STD",
+        "A1",
+        "1.2.2.2 & 1.2.2.3",
+        "GM",
+        "Doc 9379",
+        "Part I, C3,",
+        "Part II, C2"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.309",
+      "ce": "CE-6",
+      "question": "Does the State have a system to ensure that the original licence submitted for a licence validation or conversion is in full compliance with Annex 1?",
+      "guidance": [
+        "1) Review implementation of process and procedures for confirmation of the licence’s conformity with requirements of Annex 1.",
+        "2) Review evidence to confirm effective implementation for all types of licences."
+      ],
+      "icaoReferences": [
+        "CC",
+        "Art. 33",
+        "STD",
+        "A1",
+        "1.2.2",
+        "GM",
+        "Doc 9379",
+        "Part I, C3",
+        "Part II, C2"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.310",
+      "ce": "CE-6",
+      "question": "Has the State implemented a systematic process to answer queries from other States in order to confirm the validity of the licences issued?",
+      "guidance": [
+        "1) Review process and procedures established and implemented for answering queries from other States.",
+        "2) Review evidence to confirm effective implementation for all types of licences."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.2 & 1.2.5.1.2, C5 & C6",
+        "GM",
+        "Doc 9379",
+        "Part I, C2",
+        "Part II, C2, C3, C6 & C8"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.313",
+      "ce": "CE-6",
+      "question": "Have procedures been implemented for the validation/conversion of foreign licences and ratings of aircraft maintenance technicians/engineers/mechanics?",
+      "guidance": [
+        "1) Applicable only if such validation/conversion is performed in the State.",
+        "2) Review procedures.",
+        "3) Review evidence to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.2 & 4.1",
+        "GM",
+        "Doc 9379",
+        "Part II, C2, C3 & C4"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.315",
+      "ce": "CE-6",
+      "question": "Have procedures been implemented for the validation/conversion of foreign licences of flight operations officers/flight dispatchers?",
+      "guidance": [
+        "1) Applicable only if such validation/conversion is performed in the State.",
+        "2) Review procedures.",
+        "3) Review evidence to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.2 & 4.1",
+        "GM",
+        "Doc 9379",
+        "Part II, C2, C3 & C4"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.317",
+      "ce": "CE-6",
+      "question": "Have procedures been implemented for the validation/conversion of foreign licences and ratings of air traffic controllers?",
+      "guidance": [
+        "1) Applicable only if such validation/conversion is performed in the State.",
+        "2) Review procedures.",
+        "3) Review evidence to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.2 & 4.1",
+        "GM",
+        "Doc 9379",
+        "Part II, C2, C3 & C4"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.319",
+      "ce": "CE-6",
+      "question": "Have procedures been established and implemented for issue/validation/conversion of foreign licences and ratings for remote pilot licences?",
+      "guidance": [
+        "1) Applicable only if such issuance/validation/conversion is performed in the State.",
+        "2) Review procedures.",
+        "3) Review evidence to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "C1, C2, C5 & C6",
+        "GM",
+        "Doc 9379",
+        "Doc 10019"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.321",
+      "ce": "CE-6",
+      "question": "Have procedures been established and implemented for automatic validation of licences?",
+      "guidance": [
+        "1) Applicable only if such issue/validation/conversion is performed in the State.",
+        "2) Review procedures.",
+        "3) Review evidence to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.2.3 & Att. B"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.401",
+      "ce": "CE-2",
+      "question": "Has the State promulgated regulations for medical examinations of applicants of various licences by medical examiners?",
+      "guidance": [
+        "1) Verify regulations regarding medical provisions for licensing, including designation of medical examiners and requirement of a medical assessor.",
+        "2) Review regulations for the applicant to sign and furnish to medical examiners, a declaration, whose content conforms to the requirements of Annex 1.",
+        "3) Check promulgation of latest amendments to Annex 1."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.4, 1.2.4.6 & C6",
+        "GM",
+        "Doc 8984",
+        "Part I, C1, C2, Att. to C2 & C3",
+        "Doc 9654",
+        "Doc 9379",
+        "Part I, C2 & C5",
+        "Part II, 8.3"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.403",
+      "ce": "CE-3",
+      "question": "Does the State use the services of medical assessors to evaluate reports submitted to the Licensing Authority by designated medical examiners (DME)?",
+      "guidance": [
+        "1) Qualifications, experience, functions and responsibility of the medical assessor must be clearly described.",
+        "2) Review the process and documented evidence of the appointment of the medical assessor.",
+        "3) Alternative systems can be acceptable, but they must guarantee evaluation of medical reports and effective oversight of all DMEs, medical centres/facilities."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.4.8, 1.2.4.9 & 1.2.4.10",
+        "GM",
+        "Doc 8984",
+        "Part 1, C1, C2 & C3",
+        "Doc 9379",
+        "Part I, C2 & C5",
+        "Part II, 8.3"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "Guidance revised for clarity.",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.405",
+      "ce": "CE-6",
+      "question": "Has the State implemented a process for the evaluation of medical reports submitted by the designated medical examiners (DME)?",
+      "guidance": [
+        "1) Verify that the process and methods in place for the evaluation of medical reports comply with Docs 8984 and 9379.",
+        "2) Review evidence to confirm effective implementation, e.g. audit reports of medical assessments and analysis of medical outcomes."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.4.9",
+        "GM",
+        "Doc 8984",
+        "Part I, C1, C2 & C3",
+        "Doc 9379",
+        "Part II, 8.3"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.409",
+      "ce": "CE-8",
+      "question": "Has the State established the appropriate actions to be taken in case of a false declaration by an applicant to a designated medical examiner (DME)?",
+      "guidance": [
+        "1) Review procedures outlining actions to be taken.",
+        "2) Review evidence to confirm effective implementation, i.e. reports and evidence of a graduated response system (warnings, sanctions, etc. that have been issued)."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.4.7.1"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.411",
+      "ce": "CE-6",
+      "question": "Do designated medical examiners (DME) systematically submit signed reports to the Licensing Authority after completing the medical examination of an applicant?",
+      "guidance": [
+        "1) If the medical examination is carried out by 2 or more examiners, verify that an appointed examiner is responsible for coordinating the results and signing of the report.",
+        "2) If reports are submitted electronically, verify that adequate identification of the examiner has been established.",
+        "3) Review evidence to confirm effective implementation, i.e. records of submission and acknowledgement of receipt.",
+        "4) Verify that all reports are available at the Licensing Authority for proper review and analysis by an appropriately qualified and experienced medical personnel (even if the State does not employ a medical assessor).",
+        "5) Verify that detailed medical information is available only through the medical section or medical assessor to ensure medical confidentiality."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.4.8",
+        "GM",
+        "Doc 8984",
+        "Part 1, C1, C2 & C3",
+        "Doc 9379",
+        "Part II, 8.2, 8.3 & 8.4"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.415",
+      "ce": "CE-7",
+      "question": "Does the Licensing Authority perform medical assessment audits?",
+      "guidance": [
+        "1) Confirm that audit process is established.",
+        "2) Review evidence to confirm effective implementation, i.e. audit reports.",
+        "Note to the auditor:",
+        "1) The purpose of such audits is to ensure that designated medical examiners meet applicable standards for good medical practice and aeromedical risk assessment.",
+        "2) Guidance on aeromedical risk assessment is found in the Manual of Civil Aviation Medicine (Doc 8984)."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.4.9.1",
+        "GM",
+        "Doc 8984"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": "Guidance revised for clarity. Reference revised.",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.417",
+      "ce": "CE-7",
+      "question": "Has the Licensing Authority implemented a system to ensure the confidentiality of medical reports and records at all times?",
+      "guidance": [
+        "1) Ensure the Licensing Authority checks the confidentiality system at designated medical examiners’ (DME) facilities or/and medical centres.",
+        "2) Check confidentiality system of the reports kept by Licensing Authority.",
+        "3) Check the policy and procedures established to determine to what extent pertinent medical information is presented to relevant officials of the Licensing Authority (special limitations due to medical issues) and other stakeholders.",
+        "4) Review reports/complaints for any breach of medical confidentiality."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.4.11",
+        "GM",
+        "Doc 8984",
+        "Doc 9379",
+        "Part II, 8.7"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.419",
+      "ce": "CE-6",
+      "question": "If the medical Standards prescribed in Chapter 6 of Annex 1 for a particular licence type are not fully met, has the State implemented a system for the possible issuance or renewal of the appropriate medical assessment following conditions as stipulated in Annex 1?",
+      "guidance": [
+        "1) Confirm that the appropriate medical assessment is not issued or renewed unless the following conditions are fulfilled:",
+        "a) accredited medical conclusion indicates that, in special circumstances, the applicant’s failure to meet any requirement, whether numerical or otherwise, is such that exercise of the privileges of the licence applied for is not likely to jeopardize flight safety;",
+        "b) relevant ability, skills and experience of the applicant and operational conditions have been given due consideration; and",
+        "c) the licence is endorsed with any special limitation or limitations when the safe performance of the licence holder’s duties is dependent on compliance with such limitation or limitations.",
+        "2) Confirm that procedures for coordination between medical assessors, other subject matter experts (SMEs) and Licensing Authority are established.",
+        "3) Review minutes of medical review/board meetings to confirm consultation with SMEs, operations department, etc.",
+        "4) Review reports including analysis of loss of licence due to medical reasons and trend analysis of findings of the outcome of the medical certification.",
+        "5) Review policy, procedures and evidence of communication for the justification and outcome of the medical certification decision with the Licensing Authority, the applicant and the relevant medical examiner."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.4.10",
+        "GM",
+        "Doc 8984"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.421",
+      "ce": "CE-5",
+      "question": "Has the State implemented a process describing circumstances under which a medical examination may be deferred?",
+      "guidance": [
+        "1) Confirm that the process developed and implemented complies with the regulations.",
+        "2) If the policy formally adopted by the State is that the medical examination cannot be deferred, the PQ is “Not Applicable”.",
+        "3) If deferred, review the frequency and reasons for deferral."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.5.2.6",
+        "GM",
+        "Doc 8984"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.422",
+      "ce": "CE-6",
+      "question": "If the State authorizes its national licence holders to perform their medical examinations in a foreign State, has a system been implemented to ensure:",
+      "guidance": [
+        "1) Check the system in place.",
+        "2) Check if foreign authorities are contacted or if they make available sufficient information.",
+        "3) Check the system for receiving and assessing medical reports and if said system is carried out by the foreign authority.",
+        "4) Check if there is a system to ensure that an overseas DME is properly designated, trained and in good standing with the overseas Licensing Authority.",
+        "5) Review evidence to ensure effective implementation, e.g. list of foreign DMEs and medical assessors, audit reports of DMEs and analysis of outcomes of medical assessments."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9379",
+        "Part II, 8.8",
+        "Doc 8984",
+        "Part I"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.423",
+      "ce": "CE-6",
+      "question": "If the State has not established any system for assessing the medical fitness of licence applicants and licence holders, has the State implemented practices and procedures to ensure the medical fitness of an applicant (e.g. the validation of a foreign medical assessment)?",
+      "guidance": [
+        "1) Evaluate procedures and practices implemented for the validation or conversion of foreign medical assessments.",
+        "2) Review evidence to confirm effective implementation, e.g. number of foreign validations, States where such medical assessments are issued, analysis of loss of certification due to medical reasons and trend analysis of findings of the outcome of medical certification."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.4",
+        "GM",
+        "Doc 9379",
+        "Part II, 8.3 & 8.8"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.451",
+      "ce": "CE-5",
+      "question": "Has the State established a procedure for the designation of medical examiners and provided guidance material to them?",
+      "guidance": [
+        "Description of the system and criteria for the designation of medical examiners:",
+        "1) conditions and duration of the designation;",
+        "2) scope of authority given to a medical examiner (e.g. issuance of waivers, classes of medical assessment, etc.);",
+        "3) guidelines provided to the medical examiners (e.g. template reports, manual for the medical assessment, etc.); and",
+        "4) methods for informing medical examiners of new medical-related provisions."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.4.6",
+        "GM",
+        "Doc 9379",
+        "Part II, C8",
+        "Doc 8984",
+        "Parts I, II, III & V"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.453",
+      "ce": "CE-6",
+      "question": "Does the State require designated medical examiners (DMEs) to demonstrate their competency in aviation medicine before designation?",
+      "guidance": [
+        "1) Review the procedure for designation of medical examiners.",
+        "2) Verify that, before initial designation, the DMEs:",
+        "a) undergo the required training and demonstrate adequate competency in aviation medicine; and",
+        "b) have practical knowledge and experience of the conditions in which the holders of licences and ratings carry out their duties.",
+        "3) Review evidence to confirm effective implementation",
+        "a) check publication of DME list; and",
+        "b) review DMEs files and records.",
+        "Note to the auditor:",
+        "Examples of practical knowledge and experience are: flight experience, simulator experience, on-site observation and any other hands-on experience deemed to be valid by the Licensing Authority."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.4.6.1 & 1.2.4.6.2",
+        "GM",
+        "Doc 8984",
+        "Parts I & V",
+        "Doc 9379",
+        "Part II, 8.2 & 8.3"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": "Question revised for clarity. Reference revised.",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.457",
+      "ce": "CE-6",
+      "question": "Does the State ensure that designated medical examiners (DMEs) attend refresher training in aviation medicine at regular intervals?",
+      "guidance": [
+        "1) Review procedures for renewal of designation.",
+        "2) Verify that, before the renewal of designation, the DMEs undergo refresher training with intervals of 3 to 5 years. (Training or seminar organized by the State or by other States or recognized organization.",
+        "3) Sample DME files.",
+        "4) Review evidence to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.4.6.1",
+        "GM",
+        "Doc 8984",
+        "Parts I & V",
+        "Doc 9379",
+        "Part II, 8.2 & 8.3"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "Question revised for clarity. Reference revised.",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.459",
+      "ce": "CE-7",
+      "question": "Has the State implemented a system for the supervision and control of designated medical examiners (DME)?",
+      "guidance": [
+        "1) Description of the oversight system for DMEs.",
+        "2) Verify inclusion of premises and equipment inspections.",
+        "3) Demonstration of use of latest ICAO SARPs.",
+        "4) Up-to-date refresher training.",
+        "5) Timely transmittal of reports to Licensing Authority’s medical department.",
+        "6) Review evidence to confirm effective implementation, e.g. oversight reports, audit reports, training records, designation documentation, etc."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.4.6.3 & 1.2.4.9.1",
+        "GM",
+        "Doc 8984",
+        "Parts I & V",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part II, 8.2, 8.3 & 8.4"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.461",
+      "ce": "CE-8",
+      "question": "What action does the Licensing Authority take in the event that sufficient evidence exists to demonstrate that a designated medical examiner (DME) has not performed his/her duties in accordance with the prescribed procedures?",
+      "guidance": [
+        "1) Review enforcement system and/or procedures.",
+        "2) Review evidence to confirm effective implementation of a graduated response system (warnings, sanctions)."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.463",
+      "ce": "CE-6",
+      "question": "Has the State implemented appropriate aviation-related health promotion for licence holders subject to a medical assessment?",
+      "guidance": [
+        "1) Verify analysis of in-flight incapacitation events and findings during medical assessments.",
+        "2) Review list of appropriate topics identified for health promotion.",
+        "3) Review evidence to confirm effective implementation, e.g. communication with stakeholders."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.4.2 &1.2.4.3",
+        "GM",
+        "Doc 8984",
+        "Part I, C1"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.501",
+      "ce": "CE-6",
+      "question": "If the Licensing Authority develops, conducts and/or corrects its own written and oral examinations for the issuance of all or some licences and ratings by the State, has the State implemented an appropriate and comprehensive system?",
+      "guidance": [
+        "1) Check if guidance to examiners on how to prepare examinations has been developed.",
+        "2) Check if there are procedures for developing and revising questionnaires:",
+        "a) by designated examiners;",
+        "b) by using a pool of questions; and",
+        "c) by a system for revising and updating questions periodically.",
+        "3) Review evidence to confirm implementation for all types of exams organized (pilots, air traffic controllers, aircraft maintenance engineers, as applicable)."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9379",
+        "Part II, C5"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.503",
+      "ce": "CE-6",
+      "question": "If the Licensing Authority issues licences and ratings by using written and oral examinations that it did not develop and/or conduct and/or correct, has the State implemented a system to ensure the consistency and reliability of testing by the designated/delegated organizations or examiners?",
+      "guidance": [
+        "1) For each type of licence issued (pilots, air traffic controllers, aircraft maintenance engineers, as applicable), check if the written and oral exams are developed/conducted/corrected by the Licensing Authority. If not, this PQ is APPLICABLE.",
+        "2) Check that there is a formal system implemented concerning delegation for the development/conduct/correction of examinations.",
+        "3) Check that there is a system for the surveillance of delegated persons or organizations.",
+        "4) This PQ is also APPLICABLE if the State accepts results of examinations taken in a foreign State by its nationals."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9379",
+        "Part II, C5"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.505",
+      "ce": "CE-4",
+      "question": "Has the State established appropriate minimum qualification requirements for examiners who prepare questions or assess examinations?",
+      "guidance": [
+        "1) Verify the document/procedures detailing the knowledge and experience requirement for designation as an examiner for pilots, air traffic controllers, aircraft maintenance engineers, as applicable.",
+        "2) This PQ is also APPLICABLE for examiners if some part of the examination process is delegated.",
+        "3) Review existing examiner's records to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9379",
+        "Part II, 5.4"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.507",
+      "ce": "CE-6",
+      "question": "Has the State implemented a process for the designation of examiners for written and oral exams?",
+      "guidance": [
+        "1) Review process for the selection, designation and appointment of these examiners for pilots, air traffic controllers, aircraft maintenance engineers, as applicable.",
+        "2) Review list of examiners, including indication of the specialty of each examiner and the type of exam he/she is authorized to prepare and conduct.",
+        "3) Check the implementation of the system for their designation (official letter, duration of their designation etc.).",
+        "4) Review evidence to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9379",
+        "Part II, 5.4"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.601",
+      "ce": "CE-6",
+      "question": "Has the State implemented a comprehensive system for the designation of flight and practical examiners?",
+      "guidance": [
+        "1) Verify the requirements for the designation and qualifications of flight and practical examiners.",
+        "2) Review procedures for designation.",
+        "3) Check duration of the designation, verify that duties and responsibilities are clearly defined.",
+        "4) Review evidence to confirm effective implementation for each examiner type by sampling designated examiner files and records.",
+        "5) Review the system implemented by the State for flight and practical examinations to ensure that applicants for a licence/licence holders meet knowledge and skill requirements specified for the issuance of the relevant licences and ratings.",
+        "Note to the auditor: Applicable also for practical examiners for air traffic controller and aircraft maintenance engineer licences."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9379",
+        "Part II, 5.4"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": "Merged with PQ 3.603. Guidance revised for clarity.",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "With the merging, the subject is already covered earlier in two PQs",
+        "briefOnWorkRequired": "The designation of flight and practical examiners is very well documented and very well implemented through the particular license regulations. The designation of examiners for pilots and other professions for their practical examinations are done in accordance with the established procedures where the Civil Aviation Authority goes into great details in reviewing the evidence for the knowledge skill and attitudes of the examiners"
+      }
+    },
+    {
+      "pqNo": "3.605",
+      "ce": "CE-7",
+      "question": "Has the State implemented a system for the supervision and control of flight and practical test delivery, which ensures consistency and reliability of testing by the designated flight and practical examiners?",
+      "guidance": [
+        "1) Evaluate system for supervision by the authority of the designated flight and practical examiners while performing their examiner functions.",
+        "2) Review frequency of surveillance established.",
+        "3) Verify guidance material for examiners and/or post assessment by the Licensing Authority.",
+        "4) Review evidence to confirm effective implementation.",
+        "5) Applicable also for practical examiners for air traffic controller and aircraft maintenance engineer licences."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part II, 5.4"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.607",
+      "ce": "CE-4",
+      "question": "How does the State ensure the maintenance of qualification and proficiency of flight and practical examiners?",
+      "guidance": [
+        "1) Verify recurrent training rules for flight and practical examiners.",
+        "2) Verify conditions for renewal of designated flight and practical examiners.",
+        "3) Verify supervision done by the Licensing Authority.",
+        "4) Review evidence to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part II, 5.4"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.609",
+      "ce": "CE-8",
+      "question": "What action does the Licensing Authority take in the event that sufficient evidence exists to demonstrate that a flight or practical examiner has not performed his/her duties in accordance with the prescribed procedures?",
+      "guidance": [
+        "1) Review procedures.",
+        "2) Review evidence to confirm effective implementation of a graduated response system (warnings, sanctions).",
+        "3) Applicable also for practical examiners for air traffic controller and aircraft maintenance engineer licences."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part II, C10"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.655",
+      "ce": "CE-6",
+      "question": "Has the State implemented a system for formally evaluating and re-evaluating the ability of:",
+      "guidance": [
+        "1) Verify description and references of the system implemented to formally evaluate and/or re-evaluate all licence holders concerned by language proficiency requirements.",
+        "2) Check the system for nominating/designating the person or organization performing the evaluation.",
+        "3) If the evaluation is done by the authority, check the nomination of the examiners and review the content of the tests.",
+        "4) If the evaluation is delegated to a person or another organization, check the process to formally designate this person or organization as well as the criteria and the mechanism to ensure that the examiner(s) are qualified.",
+        "5) Review the contents of the tests.",
+        "6) Ensure that intervals for re-evaluation conform with ICAO guidance.",
+        "7) Check implementation of the system for endorsement of language proficiency ratings in licences.",
+        "a) check if the date of validity is clearly indicated on the licence;",
+        "b) if the licence holder has been assessed at Level 4 or higher in English and another language, it should also be indicated on the licence; and",
+        "c) if a licence holder has failed to demonstrate a language proficiency of at least ICAO Operational Level (Level 4), it should also be clearly indicated on the licence."
+      ],
+      "icaoReferences": [
+        "CC",
+        "Art. 39b)",
+        "STD",
+        "A1",
+        "1.2.9, 5.2.1 XIII), App 1 & Att. A",
+        "GM",
+        "Doc 9379",
+        "Part II, C6, Att. & App. to Part II",
+        "Doc 9835",
+        "Doc 10159"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": "Reference revised",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "The revised reference does not change the way already addressed for the ELP in CAR FCL and CAR ATCO extensively",
+        "briefOnWorkRequired": "The English language proficiency testing is conducted by the Civil Aviation Authority of Oman approved language assessment bodies only . The regulations regarding contact licensing and air traffic controller licensing goes into great detail in making sure that all the aspects along with the holistic descriptors for English language testing are complied with in accordance with the standards ."
+      }
+    },
+    {
+      "pqNo": "3.657",
+      "ce": "CE-7",
+      "question": "Does the State ensure that the process and quality of the language proficiency system conform with the provisions of Annex 1 and related guidance materials?",
+      "guidance": [
+        "Verify that regulations have been promulgated and related guidance have been implemented for the following, as applicable:",
+        "a) aeroplane, airship, helicopter and powered-lift pilots;",
+        "b) flight navigators required to use the radiotelephone on board an aircraft;",
+        "c) air traffic controllers (ATCOs);",
+        "d) aeronautical station operators;",
+        "e) flight engineers;",
+        "f) glider pilots;",
+        "g) free balloon pilots."
+      ],
+      "icaoReferences": [
+        "STD & RP",
+        "A1",
+        "1.2.9",
+        "GM",
+        "Doc 9379",
+        "Part II, C6, Att. &",
+        "App. to Part II",
+        "Doc 9835",
+        "Doc 10159"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": "Reference revised",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "The revised reference does not change the way already addressed for the ELP in CAR FCL and CAR ATCO extensively",
+        "briefOnWorkRequired": "The English language proficiency testing conducted Oman under the approvals granted by the Civil Aviation Authority fully meet the requirements call the English language testing as required in annex 1 and under the guidance of document 9835 . The testing for English language proficiency is conducted mainly for the flight crew under car FCL and also for the air traffic controllers under car atco ."
+      }
+    },
+    {
+      "pqNo": "3.701",
+      "ce": "CE-6",
+      "question": "Does the State:",
+      "guidance": [
+        "1) Evaluate filing system.",
+        "2) Review filing procedures to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9379",
+        "Part I, 2.8"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.703",
+      "ce": "CE-6",
+      "question": "Has the State implemented a system:",
+      "guidance": [
+        "1) Review filing procedures.",
+        "2) Evaluate system for maintaining confidentiality and control of access."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9379",
+        "Part I, 2.8"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.751",
+      "ce": "CE-6",
+      "question": "Has the State implemented procedures for the approval of domestic and foreign aviation training organizations (TOs)?",
+      "guidance": [
+        "1) Check procedures for approval of domestic and foreign TOs.",
+        "2) Check if procedures cover required pilot TOs, air traffic controller and also maintenance TOs, as needed.",
+        "3) Check training organization administered by authority, if applicable.",
+        "4) Check if the procedures also cover, among others, the approval of training programmes, review of the content of the training and procedures manual, quality assurance system, qualification of synthetic training devices."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.8 & App. 2",
+        "GM",
+        "Doc 9379",
+        "Part II, 7.3",
+        "Doc 9841"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": "Question revised for clarity.",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "Minor changes may be required if approved since the subject is already addressed in the CARs for the training organizations especially in CAR ORA for the aircrew and CAR ATCO for the ATCOs training organizations",
+        "briefOnWorkRequired": "The Civil Aviation Authority of Oman has specific regulations for the approval of training organisations with specific regard 2 standards and recommended practices that deal with the approval of training organizations within the country and also foreign countries you're just a baby today"
+      }
+    },
+    {
+      "pqNo": "3.753",
+      "ce": "CE-6",
+      "question": "Has the State implemented a system to ensure the qualification and competency of the instructors of approved training organizations (TOs)?",
+      "guidance": [
+        "1) Review evidence to confirm implementation of the State’s procedures to ensure the qualifications and competence of the instructional personnel of TOs (for pilots, air traffic controllers, aircraft maintenance engineers, as applicable).",
+        "2) Check TOs administered by authority, if applicable."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.8 & App. 2",
+        "GM",
+        "Doc 9379",
+        "Part II, 7.3 & 7.4"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": "Question revised for clarity.  Guidance revised for clarity.",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "The PQ and the guidance revised for clarity only. The PQ is already addressed and may require details for Tos administered by CAA. The CAA Oman does not administer any TO.",
+        "briefOnWorkRequired": "All the particular licensing regulations and specifically regarding the approval of training organizations they cover an explicit details regarding the system that is followed for the initial qualification and maintenance of competency of the instructors at the approved training organisations whether they are performing in line with their authorizations and qualifications"
+      }
+    },
+    {
+      "pqNo": "3.755",
+      "ce": "CE-7",
+      "question": "If aviation training organizations (TOs) conduct examinations and testing on behalf of the Licensing Authority, has the Licensing Authority implemented a system to ensure proper surveillance of delegated tasks?",
+      "guidance": [
+        "1) Review legal basis of delegation and agreement between the Licensing Authority and TOs.",
+        "2) Review the methods used to prevent conflict of interest within the domestic and foreign TOs for pilots, air traffic controllers, aircraft maintenance engineers, as applicable.",
+        "3) Review effective implementation of the system used for the qualification and oversight of examiners as part of the TO approval package."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.8",
+        "GM",
+        "Doc 9379",
+        "Part I, C6",
+        "Part II, C7",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9841, C10"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.761",
+      "ce": "CE-6",
+      "question": "Does the State issue a training organization’s (TO) approval document, which is comprehensive and contains at least the TO’s name and location, the date of issue and period of validity (where appropriate) and terms of approval?",
+      "guidance": [
+        "Verify approval certificate of TO for pilots, air traffic controllers, aircraft maintenance engineers, as applicable."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.8 & App. 2",
+        "Doc 9379",
+        "Part II, 7.4.1.2",
+        "Doc 9841"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "Guidance revised for clarity. Reference revised",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "The revised guidance is already covered and Oman CAA already addresses this matter.",
+        "briefOnWorkRequired": "The Civil Aviation Authority of Oman issues the approved training organization certificates with all the details as required under annex 1 and also under document 9841  At present the approval certificates for the training organizations are in exact format that of the European regulations giving out the certification details and the training specification details for each training organization"
+      }
+    },
+    {
+      "pqNo": "3.763",
+      "ce": "CE-6",
+      "question": "Does the State ensure that the approved training organization (TO) develops and publishes a training and procedures manual for the use of personnel concerned, the content of which conforms to Annex 1, Appendix 2?",
+      "guidance": [
+        "1) Review implementation of procedure or guidelines with respect to the content of the training and procedures manual for pilots, air traffic controllers, aircraft maintenance engineers, as applicable.",
+        "2) Check if the manuals of TOs are reviewed by the Licensing Authority.",
+        "3) Review some of the manuals to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.8 & App. 2",
+        "GM",
+        "Doc 9841",
+        "C3 & App. A"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": "Guidance revised for clarity.",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "The revised guidance is already covered and Oman CAA already addresses this matter.",
+        "briefOnWorkRequired": "Civil Aviation Authority Oman in its specific license regulations and regarding the certification of approved training organization requires all the training organisations to develop a training and procedures manual according to which the approved training shall be conducted within an approved training organization in accordance with the standards and recommended practices ."
+      }
+    },
+    {
+      "pqNo": "3.765",
+      "ce": "CE-6",
+      "question": "Does the process of issuing an approval to a training organization (TO) take into account pertinent aspects related to facilities, equipment, key personnel and organization, as contained in Annex 1 Appendix 2?",
+      "guidance": [
+        "1) Check the implementation of the procedure for approval of TOs for pilots, air traffic controllers, aircraft maintenance engineers, as applicable.",
+        "2) Review evidence to confirm effective implementation.",
+        "3) Check if the authority reviews each of the following points:",
+        "a) facilities, working environment and installations (information, equipment, training devices and material);",
+        "b) qualification of synthetic training devices in accordance with State’s regulations (Doc 9625);",
+        "c) key personnel (including instructors and examiners);",
+        "d) training records;",
+        "e) evaluation and checking; and",
+        "f) quality management system."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.8 & App. 2",
+        "GM",
+        "Doc 9625",
+        "Doc 9841"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.767",
+      "ce": "CE-7",
+      "question": "Does the State implement an effective surveillance programme of the approved training organizations (TOs) to ensure continuing compliance with the approval regulations and document?",
+      "guidance": [
+        "1) Evaluate procedures for conduct of surveillance programme of domestic and foreign approved TOs for pilots, air traffic controllers, aircraft maintenance engineers, as applicable.",
+        "2) Review methods of oversight.",
+        "3) Review surveillance programme of previous year.",
+        "4) Confirm appropriate frequency of inspections (planned or random inspections)."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.8 & App. 2",
+        "GM",
+        "Doc 9379",
+        "Part II, 7.4, 10.3 & 10.4",
+        "Doc 9841",
+        "C2 & C9"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.769",
+      "ce": "CE-8",
+      "question": "What action does the Licensing Authority take in the event that sufficient evidence exists to demonstrate that a training organization has not performed its function according to its procedures manual?",
+      "guidance": [
+        "1) Review enforcement system and/or procedures for domestic and foreign TOs for pilots, air traffic controllers, aircraft maintenance engineers, as applicable.",
+        "2) Review evidence to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9379",
+        "Part II, C10"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.771",
+      "ce": "CE-6",
+      "question": "If the State authorizes/approves foreign training organizations (TOs) to provide approved training to its licence holders for the issuance of a related licence and/or ratings, does it implement a system for the approval of foreign TOs?",
+      "guidance": [
+        "1) Review list of foreign TOs which provide training to the State’s licence holders for pilots, air traffic controllers, aircraft maintenance engineers, as applicable.",
+        "2) If the State authorizes/approves foreign TOs, verify if the State applies the same system of approval as used for TOs based in its State or does it implement a process of validation/acceptance of the approval issued by the foreign authority. Check if the same procedure used for domestic TOs is applied.",
+        "3) If there are different procedures for foreign TOs, check the validation system and the supplementary conditions established by the State for this validation (e.g. ensure the oversight capabilities of the State which issues the original approval, ask copies of the approvals for the TO and simulators, request the approved training programme to be followed by its nationals, check which examiners are used, their qualification and how oversight is conducted etc.).",
+        "4) Review evidence to confirm implementation."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "1.2.8",
+        "GM",
+        "Doc 9379",
+        "Part II, 7.4.2",
+        "Doc 9841"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": "Question revised for clarity. Guidance revised for clarity. Reference revised",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "Highly recommended that Oman CAA devises a separate regulation that deals with the certification process of foreign ATOs in line with the guidance provided in ICAO Doc 9841. At the moment, a large number of foreign ATOs are certified by Oman CAA and there is a need to have a clear process as to which procedure is being adopted for local and foreign ATOs. The Doc 9841 has enough guidance on the subject.",
+        "briefOnWorkRequired": "The Civil Aviation Authority of Oman approves full training organizations for the training of its license holders for the issue of license and also for the issue of ratings . All such approvals are carried out in accordance with the specific licensing regulations for the specific licenses for example the air crew foreign training organizations are approved in accordance with car orawhile for air traffic controllers training in foreign countries the car atco describes the approval process . The Civil Aviation Authority Oman we'll need to establish detailed procedures and regulations in order to be able to validate the abilities of foreign training organisations end the way the foreign state oversights these training organizations with the basic aim to ensure that the standards and recommended practices are all complied with ."
+      }
+    },
+    {
+      "pqNo": "3.772",
+      "ce": "CE-6",
+      "question": "Does the State implement a process to approve training programmes related to the first issuance of licences and ratings?",
+      "guidance": [
+        "1) Check the implementation of process for approval of training programme (in domestic or foreign TOs) for pilots, air traffic controllers, aircraft maintenance engineers, as applicable.",
+        "2) Review evidence to confirm effective implementation.",
+        "3) Check that all amendments to training programmes are approved by the authority.",
+        "4) If automatically validating licences, review evidence to confirm that training is performed in accordance with a common licensing system within an RSOO. Verify the agreement registered with ICAO pursuant to Article 83 of the Convention on International Civil Aviation."
+      ],
+      "icaoReferences": [
+        "CC",
+        "Art. 83",
+        "STD",
+        "A1",
+        "1.2.8 & App. 2",
+        "GM",
+        "Doc 9841",
+        "Doc 9379",
+        "Part II, C7"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": "Guidance revised for clarity. Reference revised",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "The guidance has been revised and also the reference has been revised for clarity purpose only the Civil Aviation Authority of Oman is already doing the needful in a satisfactory manner",
+        "briefOnWorkRequired": "The Civil Aviation Authority Oman has detailed processes and procedures for evaluating and approving the training programs that relate to the first issuance of licenses and ratings . The Civil Aviation Authority of Oman does not fall under any regional safety oversight organization and usually the application of article 83 best with regard to the training organizations is not applicable ."
+      }
+    },
+    {
+      "pqNo": "3.801",
+      "ce": "CE-2",
+      "question": "Has the State promulgated regulations for training or licensing, as applicable, of aircraft maintenance technicians, engineers and mechanics?",
+      "guidance": [
+        "1) Verify that regulations include all licences and rating requirements of aircraft maintenance technicians/engineers/mechanics.",
+        "2) Verify that regulations specify the conditions to be observed in exercising the privileges of an aircraft maintenance technician/engineer/mechanic licence."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        4.2
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "Merged with PQ 3.803. Guidance revised for clarity.",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "The merging and revision of guidance is already addressed",
+        "briefOnWorkRequired": "The Civil Aviation Authority Oman has detailed regulations for the licensing of aircraft maintenance technicians and engineers and mechanics and those regulations fully cover the privileges of the licences and the endorsed ratings for the aircraft maintenance technicians engineers and mechanics ."
+      }
+    },
+    {
+      "pqNo": "3.805",
+      "ce": "CE-6",
+      "question": "Has the State implemented a process for the systematic review and validation of application forms from aircraft maintenance technicians/engineers/mechanics for the issuance, renewal, validation and extension of licences and ratings?",
+      "guidance": [
+        "1) Review implementation of the process and procedures.",
+        "2) Sample files to confirm implementation."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9760"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.807",
+      "ce": "CE-5",
+      "question": "Have procedures been established to ensure that aircraft maintenance technicians/engineers/mechanics meet the conditions/qualifications for the type of licence applied for?",
+      "guidance": [
+        "Review procedures to ensure they cover the validation of skills."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        4.2,
+        "Doc 9760"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "Guidance revised for clarity",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "The revision of guidance regarding the skills is already addressed in CARs",
+        "briefOnWorkRequired": "The Civil Aviation Authority Oman regulations for the licensing of aircraft maintenance technicians engineers and mechanics cover in detail regarding the validation of skill with particular reference to assessment of practical skills"
+      }
+    },
+    {
+      "pqNo": "3.809",
+      "ce": "CE-6",
+      "question": "Does the State prescribe on the licence or in a separate document the scope of the privileges of the aircraft maintenance technician/engineer/mechanic licence holder in terms of the complexity of the tasks related to the certification?",
+      "guidance": [
+        "1) Review scope of privileges.",
+        "2) Verify the complexity of tasks taken into consideration.",
+        "3) Sample files to confirm implementation."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        4.2,
+        "Doc 9760"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "Reference revised",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "Yes this is already addressed on the technicians licences in terms of ratings",
+        "briefOnWorkRequired": "This elevation authority Oman regulations recording the licensing of aircraft maintenance technicians engineers and mechanics license fully covered under the car 66 and the training under car 145 . The license for the aircraft maintenance technicians engineers mechanics is issued in accordance with the standards and recommended practices and ensures the marking and endorsement of basic ratings and type ratings which further ensure that the scope in terms of complexity of the tasks related to the certification is duly documented on the license ."
+      }
+    },
+    {
+      "pqNo": "3.811",
+      "ce": "CE-7",
+      "question": "Has the authority implemented a surveillance system of the aircraft maintenance technician/engineer/mechanic licences issued?",
+      "guidance": [
+        "1) Review the establishment of the surveillance process.",
+        "2) Review evidence to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part II, C10"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.813",
+      "ce": "CE-8",
+      "question": "What action does the Licensing Authority take in the event that sufficient evidence exists to demonstrate that an aircraft maintenance technician/engineer/mechanic has not performed his/her duties in accordance with the prescribed procedures and privileges of his/her licence?",
+      "guidance": [
+        "1) Review enforcement system or procedures.",
+        "2) Review evidence to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part II, C10"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "Reference revised",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "Already covered. May not require any additions.",
+        "briefOnWorkRequired": "The Civil Aviation Authority Oman regulations for licensing of aircraft maintenance technicians engineers mechanics covers the enforcement which is further elaborated in the Civil Aviation regulations of Oman regarding enforcement on the license holders ."
+      }
+    },
+    {
+      "pqNo": "3.851",
+      "ce": "CE-2",
+      "question": "Has the State promulgated regulations for training or licensing, as applicable, of air traffic controllers?",
+      "guidance": [
+        "1) Verify that the regulations include all licence and ratings requirements of air traffic controllers.",
+        "2) Verify that the regulations specify the conditions to be observed in exercising the privileges of an air traffic controller."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "4.3, 4.4 & 4.5"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "Guidance revised for clarity",
+      "defaults": {
+        "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "The existing CAR covers all the required ratings and their privileges.",
+        "briefOnWorkRequired": "The Civil Aviation Authority Oman has promulgated detailed regulations that cover the standards for the licensing and training of the air traffic controllers in Oman . The subject regulation car atco covers all the licensing knowledge training experience and skill requirements and also include in detail the privileges that shall be observed while exercising the privileges of the air traffic controller license and the endorsed ratings for the air traffic control provisions ."
+      }
+    },
+    {
+      "pqNo": "3.853",
+      "ce": "CE-5",
+      "question": "Have procedures been established:",
+      "guidance": [
+        "1) Review issuance procedures.",
+        "2) Unlicensed State employees may operate as ATCOs on condition that they meet the same requirements for ATCOs as outlined in Annex 1, 4.4.1.",
+        "3) Verify if the licensing process is delegated to an entity or organization outside the Licensing Authority."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "4.3, 4.4 & 4.5"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.855",
+      "ce": "CE-6",
+      "question": "Has the State implemented a process for the systematic review and validation of applications from air traffic controllers for the issuance, renewal, validation and extension of licences and ratings?",
+      "guidance": [
+        "1) Review implementation of the process and procedures.",
+        "2) Sample files to confirm implementation."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A1",
+        "4.3, 4.4 & 4.5"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.857",
+      "ce": "CE-7",
+      "question": "Has the Licensing Authority implemented a surveillance system of air traffic controller licences issued?",
+      "guidance": [
+        "Review evidence to confirm effective implementation of the surveillance process."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part II, C10"
+      ],
+      "isPPQ": true,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.859",
+      "ce": "CE-8",
+      "question": "What action does the Licensing Authority take in the event that sufficient evidence exists to demonstrate that an air traffic controller has not performed his/her duties in accordance with the prescribed procedures and privileges of his/her licence?",
+      "guidance": [
+        "1) Review enforcement system or procedures.",
+        "2) Review evidence to confirm effective implementation."
+      ],
+      "icaoReferences": [
+        "GM",
+        "Doc 9734",
+        "Part A, C3",
+        "Doc 9379",
+        "Part II, C10"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": null,
+      "defaults": {
+        "statusOfImplementation": null,
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": null,
+        "briefOnWorkRequired": null
+      }
+    },
+    {
+      "pqNo": "3.901",
+      "ce": "CE-2",
+      "question": "Has the State promulgated specific operating regulations to require approved training organizations (ATOs) to implement a safety management system (SMS)?",
+      "guidance": [
+        "Verify that the regulations:",
+        "1) require ATOs to implement an SMS that is acceptable to the State;",
+        "2) require the SMS to be established in accordance with the SMS framework elements contained in Appendix 2 to Annex 19; and",
+        "3) comply with the latest amendments to Annex 19.",
+        "Notes to the auditor:",
+        "1) The SMS framework components and elements in Appendix 2 to Annex 19, are:",
+        "1. Safety policy and objectives:",
+        "1.1 Management commitment;",
+        "1.2 Safety accountability and responsibilities;",
+        "1.3 Appointment of key safety personnel;",
+        "1.4 Coordination of emergency response planning;",
+        "1.5 SMS documentation;",
+        "2. Safety risk management:",
+        "2.1 Hazard identification;",
+        "2.2 Safety risk assessment and mitigation;",
+        "3. Safety assurance:",
+        "3.1 Safety performance measurement and monitoring;",
+        "3.2 The management of change;",
+        "3.3 Continuous improvement of the SMS;",
+        "4. Safety promotion:",
+        "4.1 Training and education;",
+        "4.2 Safety communication.",
+        "2) This PQ is only applicable to approved training organizations (ATOs) in accordance with Annex 1 that are exposed to safety risks related to aircraft operations during the provision of their services."
+      ],
+      "icaoReferences": [
+        "CC",
+        "Art 37",
+        "STD",
+        "A19",
+        "3.3.2 & 4.1",
+        "App 1, 2.",
+        "GM",
+        "Doc 9734, Part A",
+        3.2,
+        "Doc 9859",
+        "1.3.5 & 9.7.4"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "NEW PQ",
+      "defaults": {
+        "statusOfImplementation": "To be reviewed",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      }
+    },
+    {
+      "pqNo": "3.905",
+      "ce": "CE-4",
+      "question": "Does the State ensure that the personnel responsible for the acceptance and continuous surveillance of ATOs SMS are qualified to perform their functions and responsibilities?",
+      "guidance": [
+        "Verify that:",
+        "1) the State has identified competency requirements for personnel responsible for the acceptance and continuous surveillance of an SMS;",
+        "2) the content of the training programme addresses the SMS framework elements contained in Appendix 2 to Annex 19;",
+        "3) the training includes (but is not limited to) the following:",
+        "a) evaluation and acceptance of an ATO’s SMS;",
+        "b) evaluation and acceptance of an ATO’s safety performance indicators (SPIs);",
+        "c) continuous surveillance of the ATO’s SMS in a safety management environment;",
+        "d) hazard identification and risk management processes and methodologies;",
+        "e) protection of safety data, safety information and related sources;",
+        "f) enforcement under the framework of SMS; and",
+        "g) soft skills (e.g. effective communication skills, negotiation skills, conflict resolution, etc.);",
+        "4) a training plan has been implemented;",
+        "5) initial, OJT and recurrent training, as applicable, with specified-time periods are included; and",
+        "6) training records are systematically retained.",
+        "Notes to the auditor:",
+        "1) The framework components and elements in Appendix 2 to Annex 19 are listed in PQ 3.901.",
+        "2) This PQ is only applicable to approved training organizations (ATOs) in accordance with Annex 1 that are exposed to safety risks related to aircraft operations during the provision of their services."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A19",
+        "3.2.4",
+        "App 1, 4.1, 4.2",
+        "App 2",
+        "GM",
+        "Doc 9734, Part A",
+        3.4,
+        "Doc 9859",
+        "8.3.7"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "NEW PQ",
+      "defaults": {
+        "statusOfImplementation": "To be reviewed",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      }
+    },
+    {
+      "pqNo": "3.909",
+      "ce": "CE-5",
+      "question": "Has the State provided guidance material to the industry on the establishment and management of an SMS?",
+      "guidance": [
+        "Verify that the guidance material:",
+        "1) includes the processes for the establishment and management of an SMS;",
+        "2) addresses the SMS framework elements contained in Appendix 2 to Annex 19;",
+        "3) is updated and made accessible to ATOs; and",
+        "4) corresponds with activities conducted by the ATOs.",
+        "Notes to the auditor:",
+        "1) The framework components and elements in Appendix 2 to Annex 19 are listed in PQ 3.901.",
+        "2) This PQ is only applicable to approved training organizations (ATOs) in accordance with Annex 1 that are exposed to safety risks related to aircraft operations during the provision of their services."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A19",
+        "3.2.5",
+        "App 1, 5.2",
+        "App 2",
+        "GM",
+        "Doc 9734, Part A",
+        3.5,
+        "Doc 9859",
+        "8.3.8"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "NEW PQ",
+      "defaults": {
+        "statusOfImplementation": "To be reviewed",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      }
+    },
+    {
+      "pqNo": "3.913",
+      "ce": "CE-5",
+      "question": "Has the State established procedures for the acceptance of ATOs SMS?",
+      "guidance": [
+        "Verify that the established procedures:",
+        "1) describe the processes for the acceptance of an SMS, where the SMS manual at least includes:",
+        "a) safety policy and safety objectives;",
+        "b) reference to any applicable regulatory SMS requirements;",
+        "c) system description;",
+        "d) safety accountabilities and key safety personnel;",
+        "e) voluntary and mandatory safety reporting system processes and procedures;",
+        "f) hazard identification and safety risk assessment processes and procedures;",
+        "g) safety investigation procedures;",
+        "h) procedures for establishing and monitoring safety performance indicators;",
+        "i) SMS training processes and procedures and communication;",
+        "j) safety communication processes and procedures;",
+        "k) internal audit procedures;",
+        "l) management of change procedures;",
+        "m) SMS documentation management procedures; and",
+        "n) where applicable, coordination of emergency response planning;",
+        "2) address the SMS framework elements contained in Appendix 2 to Annex 19; and",
+        "3) are updated and made accessible to personnel responsible for the acceptance of an SMS.",
+        "Notes to the auditor:",
+        "1) The framework components and elements in Appendix 2 to Annex 19 are listed in PQ 3.901.",
+        "2) This PQ is only applicable to approved training organizations (ATOs) in accordance with Annex 1 that are exposed to safety risks related to aircraft operations during the provision of their services"
+      ],
+      "icaoReferences": [
+        "A19",
+        "3.2.5",
+        "App 1, 5.1",
+        "GM",
+        "Doc 9734, Part A",
+        3.5,
+        "Doc 9859",
+        "8.3.8 &",
+        "9.3.8.3"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "NEW PQ",
+      "defaults": {
+        "statusOfImplementation": "To be reviewed",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      }
+    },
+    {
+      "pqNo": "3.917",
+      "ce": "CE-5",
+      "question": "Has the State established procedures for the continuous surveillance of ATOs SMS?",
+      "guidance": [
+        "Verify that the established procedures:",
+        "1) describe the processes for the continuous surveillance of an SMS; and",
+        "2) are updated and made accessible to personnel responsible for the surveillance of an SMS.",
+        "Note to the auditor:",
+        "This PQ is only applicable to approved training organizations (ATOs) in accordance with Annex 1 that are exposed to safety risks related to aircraft operations during the provision of their services."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A19",
+        "3.2.5",
+        "App 1, 5.1",
+        "GM",
+        "Doc 9734, Part A",
+        3.5,
+        "Doc 9859",
+        "8.3.8"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "NEW PQ",
+      "defaults": {
+        "statusOfImplementation": "To be reviewed",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety"
+      }
+    },
+    {
+      "pqNo": "3.921",
+      "ce": "CE-6",
+      "question": "Has the State accepted the SMS of individual ATOs?",
+      "guidance": [
+        "Review evidence of implemented procedures for accepting an SMS including the maintenance of SMS operational records.",
+        "Note to the auditor:",
+        "This PQ is only applicable to approved training organizations (ATOs) in accordance with Annex 1 that are exposed to safety risks related to aircraft operations during the provision of their services."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A19",
+        4.1,
+        "App 1, 6",
+        "App 2",
+        "GM",
+        "Doc 9734, Part A",
+        3.6,
+        "Doc 9859",
+        "8.4.6 &",
+        "8.4.7"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "NEW PQ",
+      "defaults": {
+        "statusOfImplementation": "To be reviewed",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      }
+    },
+    {
+      "pqNo": "3.925",
+      "ce": "CE-7",
+      "question": "Does the State ensure that the ATOs identify hazards, assess identified safety risks, and mitigate them appropriately?",
+      "guidance": [
+        "Verify that the State ensures that the ATOs:",
+        "1) maintain a process to:",
+        "a) identify hazards associated with its aviation products or services;",
+        "b) assess safety risks; and",
+        "c) mitigate safety risks.",
+        "2) actively identify hazards, assess safety risks and mitigate them appropriately.",
+        "Notes to the auditor:",
+        "1) This verification needs to be reviewed during the industry visit.",
+        "2) This PQ is only applicable to approved training organizations (ATOs) in accordance with Annex 1 that are exposed to safety risks related to aircraft operations during the provision of their services."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A19",
+        "App2, 2.1 & 2.2",
+        "GM",
+        "Doc 9859",
+        "9.4.4 &",
+        "9.4.6"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "NEW PQ",
+      "defaults": {
+        "statusOfImplementation": "To be reviewed",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety"
+      }
+    },
+    {
+      "pqNo": "3.929",
+      "ce": "CE-6",
+      "question": "Does the State ensure that safety performance indicators and targets established by ATOs are acceptable to the State?",
+      "guidance": [
+        "1) Review the State’s mechanism for accepting individual ATOs safety performance indicators (SPIs) and targets (when applicable) to verify that proposed SPIs and respective targets (as applicable), are developed in a manner that supports the effort to meet its safety objectives, and are formulated in a manner that is specific, measurable, achievable, relevant and timebound.",
+        "2) Verify that the State ensures that the ATOs proposed SPIs are reviewed and accepted as part of the SMS acceptance.",
+        "Notes to the auditor:",
+        "1) SPIs acceptance may also be done later in the implementation process.",
+        "2) This verification needs to be reviewed during the industry visit.",
+        "3) This PQ is only applicable to approved training organizations (ATOs) in accordance with Annex 1 that are exposed to safety risks related to aircraft operations during the provision of their services."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A 19",
+        "App 2, 3.1",
+        "RP",
+        "A19",
+        "3.3.2.2",
+        "GM",
+        "Doc 9859",
+        "4.3.3 &",
+        "8.4.7."
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "NEW PQ",
+      "defaults": {
+        "statusOfImplementation": "To be reviewed",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      }
+    },
+    {
+      "pqNo": "3.933",
+      "ce": "CE-7",
+      "question": "Does the State ensure the ATOs monitor its safety performance?",
+      "guidance": [
+        "Verify that the State has a mechanism to ensure that the ATOs periodically review its safety performance including the means to:",
+        "1) review the safety performance of the organization;",
+        "2) validate the effectiveness of safety risks controls;",
+        "3) validate the identification of changes that may affect the level of safety risks associated with their aviation products or services; and",
+        "4) validate the identification and management of the safety risks that may arise from those changes.",
+        "Note to the auditor:",
+        "This PQ is only applicable to approved training organizations (ATOs) in accordance with Annex 1 that are exposed to safety risks related to aircraft operations during the provision of their services."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A 19",
+        "App2, 3.1, 3.2 & 3.3",
+        "GM",
+        "Doc 9859",
+        "8.5.4,",
+        "9.5.4,",
+        "9.5.5 &",
+        "9.5.6"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "NEW PQ",
+      "defaults": {
+        "statusOfImplementation": "To be reviewed",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      }
+    },
+    {
+      "pqNo": "3.937",
+      "ce": "CE-7",
+      "question": "Does the State ensure that the ATOs personnel involved in SMS are qualified to perform their functions and responsibilities?",
+      "guidance": [
+        "Verify:",
+        "1) that the State has a mechanism to validate that the ATOs personnel involved in SMS are qualified to perform their functions and responsibilities; and",
+        "2) the surveillance records performed by the State.",
+        "Notes to the auditor:",
+        "1) The scope of the safety training programme should be appropriate to each individual’s involvement in the SMS.",
+        "2) Review the training records of the ATOs personnel during the industry visit.",
+        "3) This PQ is only applicable to approved training organizations (ATOs) in accordance with Annex 1 that are exposed to safety risks related to aircraft operations during the provision of their services."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A19",
+        "App 2, 4.1",
+        "GM",
+        "Doc 9859",
+        "9.6.4"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "NEW PQ",
+      "defaults": {
+        "statusOfImplementation": "To be reviewed",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      }
+    },
+    {
+      "pqNo": "3.941",
+      "ce": "CE-7",
+      "question": "Does the State ensure that the ATOs continually promote safety?",
+      "guidance": [
+        "Verify that the State ensures that the ATOs:",
+        "1) develop and maintain a formal mean for safety communication that includes:",
+        "a) ensuring personnel are aware of the SMS to a degree commensurate with their positions;",
+        "b) conveying safety-critical information;",
+        "c) explaining why particular actions are taken to improve safety; and",
+        "d) explaining why safety procedures are introduced or changed; and",
+        "2) have considered communicating to external organizations any of its safety related information.",
+        "Note to the auditor:",
+        "This PQ is only applicable to approved training organizations (ATOs) in accordance with Annex 1 that are exposed to safety risks related to aircraft operations during the provision of their services."
+      ],
+      "icaoReferences": [
+        "STD",
+        "A19",
+        "App 2, 4.2",
+        "GM",
+        "Doc 9859",
+        "9.6.5"
+      ],
+      "isPPQ": false,
+      "amendmentDescription": "NEW PQ",
+      "defaults": {
+        "statusOfImplementation": "To be reviewed",
+        "mainResponsibility": "PEL",
+        "partResponsibility": null,
+        "fcl": null,
+        "aw": null,
+        "atc": null,
+        "med": null,
+        "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      }
+    }
+  ]
+}

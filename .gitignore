@@ -1,0 +1,25 @@
+node_modules
+.next
+out
+.DS_Store
+.env
+.env*.local
+*.log
+
+# Legacy SQLite artifacts. Retained so old dev checkouts clean up cleanly.
+/prisma/*.db
+/prisma/*.db-journal
+/prisma/migrations/dev.db*
+
+# Vercel
+.vercel
+
+# Next.js generated
+next-env.d.ts
+
+# Build caches
+tsconfig.tsbuildinfo
+
+# Local developer Postgres data dir (only if someone runs the binaries directly
+# instead of via docker compose)
+/.local-pg/
