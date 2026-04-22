@@ -10,6 +10,7 @@ type SearchParams = {
   ce?: string;
   status?: string;
   ppq?: string;
+  atc?: string;
   q?: string;
   sort?: string;
 };
@@ -25,6 +26,7 @@ export default async function PQsPage({
   if (sp.ce) where.ce = sp.ce;
   if (sp.status && sp.status in STATUS_META) where.status = sp.status as Status;
   if (sp.ppq === "1") where.isPPQ = true;
+  if (sp.atc === "1") where.isATC = true;
   if (sp.q) {
     where.OR = [
       { question: { contains: sp.q } },

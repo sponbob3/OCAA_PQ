@@ -5,7 +5,7 @@ import { CE_DESCRIPTIONS } from "@/lib/constants";
 import { summarize } from "@/lib/utils";
 import { SegmentedProgress } from "@/components/ProgressBar";
 import { PQCard } from "@/components/PQCard";
-import { ArrowLeft, Star } from "lucide-react";
+import { ArrowLeft, Star, RadioTower } from "lucide-react";
 
 export const dynamic = "force-dynamic";
 
@@ -25,14 +25,15 @@ export default async function CEPage({
 
   const progress = summarize(pqs.map((p) => p.status));
   const ppqCount = pqs.filter((p) => p.isPPQ).length;
+  const atcCount = pqs.filter((p) => p.isATC).length;
 
   return (
     <div className="max-w-5xl">
       <Link
-        href="/"
+        href="/usoap-pel"
         className="inline-flex items-center gap-1 text-sm text-ink-400 hover:text-ink-100 mb-4 transition-colors"
       >
-        <ArrowLeft size={14} /> Dashboard
+        <ArrowLeft size={14} /> USOAP CMA Tracker
       </Link>
 
       <header className="mb-6">
@@ -51,6 +52,12 @@ export default async function CEPage({
             <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-300 text-xs font-medium border border-amber-400/25">
               <Star size={10} className="fill-amber-400 text-amber-400" />
               {ppqCount} PPQ
+            </span>
+          )}
+          {atcCount > 0 && (
+            <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-300 text-xs font-medium border border-sky-400/25">
+              <RadioTower size={10} />
+              {atcCount} ATC
             </span>
           )}
           <span className="font-semibold text-ink-50 tabular-nums">

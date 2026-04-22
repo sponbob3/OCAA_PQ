@@ -4,7 +4,8 @@
     "audit_area_full": "Personnel Licensing",
     "source_file": "PEL_PQs_ATC_14-04-26.xlsx",
     "total_pqs": 100,
-    "ppq_count": 34
+    "ppq_count": 34,
+    "atc_count": 79
   },
   "criticalElements": [
     {
@@ -76,17 +77,26 @@
         "Part A, C2"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": "Guidance revised for clarity. Reference revised.",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": "SRD",
-        "fcl": null,
-        "aw": null,
-        "atc": null,
-        "med": null,
+        "fcl": "Imtiaz.",
+        "aw": "Malka",
+        "atc": "Asim",
+        "med": "Issam",
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": "No major differences. Work required to address the revised guidance and references.",
         "briefOnWorkRequired": "Oman Civil Aviation Authority has promulgated the regulations for all types of ANNEX1 personal licenses and it functions in accordance with annex 1 licensing functions . The related regulations are the car FCL the car atco and for the maintenance technicians that cover all aspects of knowledge experience and skill requirements . As required the approval of training courses and training organizations and the approval of flight simulation and simulation devices and the approval of language assessment bodies is also carried out ."
+      },
+      "sourceMeta": {
+        "extraNotes": [
+          "1. CAR ORA amendements are completed and approved (Imtiaz)                    2. CAR FCL amendments are under process 75%. (Imtiaz)                                 3. CAN 4-14 amendment not started (Imtiaz)                                                      4. CAR 66 amendment draft completed and forwarded to DFS for approval. (Malka)                                                                                                                      5. CAR ATCO amendment not completed (Asim).                                                            6. CAR FCL 3 amendments are under process(Dr. Issam).                                              7. CAR 147 amendment is under process (Malka)"
+        ],
+        "progressPct": 80
       }
     },
     {
@@ -105,17 +115,26 @@
         "Part I, C3"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": "SRD",
-        "fcl": null,
-        "aw": null,
-        "atc": null,
-        "med": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
+        "med": "Issam",
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [
+          "CAN 4-14 amendment not started (Imtiaz)"
+        ],
+        "progressPct": 100
       }
     },
     {
@@ -140,17 +159,24 @@
         "Part A, C3"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "Guidance revised for clarity.",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": "SRD",
-        "fcl": null,
-        "aw": null,
-        "atc": null,
-        "med": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
+        "med": "Issam",
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": "Only guidance has been revised for clarity purposes. No major work required.",
         "briefOnWorkRequired": "The safety regulation department looks after any ICAO amendments that they are implemented and responded immediately in coordination with the specific ."
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -179,17 +205,24 @@
         "Doc 10055"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": "Guidance revised for clarity. Reference revised.",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": "SRD",
-        "fcl": null,
+        "fcl": "A.Salam",
         "aw": null,
-        "atc": null,
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "Mostly the work on this PQ will be from the SRD in conjumction with PEL",
         "briefOnWorkRequired": "The matter related to notifying differences if any with ICAO are taken up by the safety regulation department in coordination with the specific department of the Civil Aviation Authority . The process is carried forward in accordance with the established procedures ."
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -216,17 +249,24 @@
         "Part I, 3.3.3"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": "SRD",
-        "fcl": null,
-        "aw": null,
-        "atc": null,
-        "med": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
+        "med": "Issam",
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -249,17 +289,24 @@
         "Part I, C1"
       ],
       "isPPQ": false,
+      "isATC": false,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -275,17 +322,24 @@
         "Part I, C2"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -304,17 +358,24 @@
         "Part I, C2 & App. A"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -340,17 +401,24 @@
         "Part I, C2"
       ],
       "isPPQ": true,
+      "isATC": false,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -368,17 +436,24 @@
         "Part I, C2"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -397,17 +472,24 @@
         "Part I, 2.4, 2.5 & 2.6"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -432,17 +514,24 @@
         "Part I, C2"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -463,17 +552,24 @@
         "Part A, C3"
       ],
       "isPPQ": false,
+      "isATC": false,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
+        "fcl": "Imtiaz",
         "aw": null,
         "atc": null,
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -494,17 +590,24 @@
         "Part I, 2.2.4"
       ],
       "isPPQ": false,
+      "isATC": false,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
-        "med": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
+        "med": "Issam",
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -522,17 +625,24 @@
         "Part I, 2.2.4"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
-        "med": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -556,17 +666,24 @@
         "Part A, C3"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
-        "med": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
+        "med": "Issam",
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -584,17 +701,24 @@
         "Part A, C3"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
-        "med": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
+        "med": "Issam",
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -615,17 +739,24 @@
         "Part II, C1"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
-        "med": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
+        "med": "Issam",
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -645,17 +776,24 @@
         "Part I, 3.7 & 3.8"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -676,17 +814,24 @@
         "Part II, 2.3, 2.4 & 2.5"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -706,17 +851,24 @@
         "Part II, 8.3"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "Guidance revised for clarity.",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": "Guidance revised only for clarity and may not require a major work",
         "briefOnWorkRequired": "The process for appealing for the licensing authority decisions is well documented and usually the need only arises when there is a difference of understanding of regulations which is visibly taken care of by the proper interpretation of the regulations ."
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -736,17 +888,24 @@
         "Part II, 3.2"
       ],
       "isPPQ": false,
+      "isATC": false,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -768,17 +927,24 @@
         "Part II, C4 & C7"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -801,17 +967,24 @@
         "Part II, C4 & C7"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -833,17 +1006,24 @@
         "Part II, 2.5"
       ],
       "isPPQ": true,
+      "isATC": false,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
+        "fcl": "Imtiaz",
         "aw": null,
         "atc": null,
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -864,17 +1044,24 @@
         "Part II, C2 & C3"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -891,17 +1078,24 @@
         "Part A, C3"
       ],
       "isPPQ": false,
+      "isATC": false,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
+        "fcl": "Imtiaz",
         "aw": null,
         "atc": null,
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -921,17 +1115,24 @@
         "Part II, 2.3 & C4"
       ],
       "isPPQ": true,
+      "isATC": false,
       "amendmentDescription": "Guidance revised for clarity. Reference revised.",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
+        "fcl": "Imtiaz",
         "aw": null,
         "atc": null,
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "The exisitng procedures cover the revised guidance. The revision is only for clarity.",
         "briefOnWorkRequired": "Civil Aviation Authority Oman has well documented and well implemented procedures for the conversion of licenses that meets the ICAO guidance in document 9379 and further elaborated in the specific licensing regulations which specifically require the verification of the foreign licenses from the state authorities that have issued the licenses in the first place ."
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -951,17 +1152,24 @@
         "Part II, C2 & C3"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "Guidance revised for clarity. Reference revised.",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
         "fcl": null,
-        "aw": null,
-        "atc": null,
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": "The exisitng procedures cover the revised guidance. The revision is only for clarity.",
         "briefOnWorkRequired": "The civilization authority Oman has well documented and well implemented regulations for all types of licenses to be converted from on the basis of foreign licenses ."
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -978,17 +1186,24 @@
         "Part II, C2 & C4"
       ],
       "isPPQ": true,
+      "isATC": false,
       "amendmentDescription": "Guidance revised for clarity. Reference revised.",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
+        "fcl": "Imtiaz",
         "aw": null,
         "atc": null,
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "The exisitng procedures cover the revised guidance. The revision is only for clarity.",
         "briefOnWorkRequired": "Basically this matter pertains to the provision in annex one regarding rendering valid the foreign licenses . Usually as the best practice and as the market practice this provision is used for for validating pilots licenses on the basis of their original foreign state issued licenses ."
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1008,17 +1223,24 @@
         "Part II, C2"
       ],
       "isPPQ": true,
+      "isATC": false,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
+        "fcl": "Imtiaz",
         "aw": null,
         "atc": null,
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1043,17 +1265,24 @@
         "Part II, C2"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -1076,17 +1305,24 @@
         "Part II, C2"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -1107,17 +1343,24 @@
         "Part II, C2, C3, C6 & C8"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -1138,17 +1381,24 @@
         "Part II, C2, C3 & C4"
       ],
       "isPPQ": false,
+      "isATC": false,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
         "fcl": null,
-        "aw": null,
+        "aw": "Malka",
         "atc": null,
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1169,6 +1419,7 @@
         "Part II, C2, C3 & C4"
       ],
       "isPPQ": false,
+      "isATC": false,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -1178,8 +1429,14 @@
         "aw": null,
         "atc": null,
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1200,6 +1457,7 @@
         "Part II, C2, C3 & C4"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -1207,10 +1465,16 @@
         "partResponsibility": null,
         "fcl": null,
         "aw": null,
-        "atc": null,
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -1231,17 +1495,24 @@
         "Doc 10019"
       ],
       "isPPQ": true,
+      "isATC": false,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
+        "fcl": "Imtiaz",
         "aw": null,
         "atc": null,
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1259,17 +1530,24 @@
         "1.2.2.3 & Att. B"
       ],
       "isPPQ": false,
+      "isATC": false,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1294,6 +1572,7 @@
         "Part II, 8.3"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -1302,9 +1581,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1328,6 +1613,7 @@
         "Part II, 8.3"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "Guidance revised for clarity.",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
@@ -1336,9 +1622,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1360,6 +1652,7 @@
         "Part II, 8.3"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -1368,9 +1661,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1387,6 +1686,7 @@
         "1.2.4.7.1"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -1395,9 +1695,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1422,6 +1728,7 @@
         "Part II, 8.2, 8.3 & 8.4"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -1430,9 +1737,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1454,6 +1767,7 @@
         "Doc 8984"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": "Guidance revised for clarity. Reference revised.",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
@@ -1462,9 +1776,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1487,6 +1807,7 @@
         "Part II, 8.7"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -1495,9 +1816,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1522,6 +1849,7 @@
         "Doc 8984"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -1530,9 +1858,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1552,6 +1886,7 @@
         "Doc 8984"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -1560,9 +1895,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1584,6 +1925,7 @@
         "Part I"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -1592,9 +1934,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1614,6 +1962,7 @@
         "Part II, 8.3 & 8.8"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -1622,9 +1971,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1649,6 +2004,7 @@
         "Parts I, II, III & V"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -1657,9 +2013,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1688,6 +2050,7 @@
         "Part II, 8.2 & 8.3"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": "Question revised for clarity. Reference revised.",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
@@ -1696,9 +2059,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1722,6 +2091,7 @@
         "Part II, 8.2 & 8.3"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "Question revised for clarity. Reference revised.",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
@@ -1730,9 +2100,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1760,6 +2136,7 @@
         "Part II, 8.2, 8.3 & 8.4"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -1768,9 +2145,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1787,6 +2170,7 @@
         "Part A, C3"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -1795,9 +2179,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1818,6 +2208,7 @@
         "Part I, C1"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -1826,9 +2217,15 @@
         "fcl": null,
         "aw": null,
         "atc": null,
-        "med": null,
+        "med": "Issam",
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1849,17 +2246,24 @@
         "Part II, C5"
       ],
       "isPPQ": true,
+      "isATC": false,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -1878,17 +2282,24 @@
         "Part II, C5"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -1906,17 +2317,24 @@
         "Part II, 5.4"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -1935,17 +2353,24 @@
         "Part II, 5.4"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -1966,17 +2391,24 @@
         "Part II, 5.4"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": "Merged with PQ 3.603. Guidance revised for clarity.",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "A.Sala,m",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "With the merging, the subject is already covered earlier in two PQs",
         "briefOnWorkRequired": "The designation of flight and practical examiners is very well documented and very well implemented through the particular license regulations. The designation of examiners for pilots and other professions for their practical examinations are done in accordance with the established procedures where the Civil Aviation Authority goes into great details in reviewing the evidence for the knowledge skill and attitudes of the examiners"
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -1998,17 +2430,24 @@
         "Part II, 5.4"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "A.Sala,m",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 50
       }
     },
     {
@@ -2029,17 +2468,24 @@
         "Part II, 5.4"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "A.Sala,m",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2059,17 +2505,24 @@
         "Part II, C10"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "A.Sala,m",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 80
       }
     },
     {
@@ -2101,17 +2554,24 @@
         "Doc 10159"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": "Reference revised",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
+        "fcl": "Imtiaz",
         "aw": null,
-        "atc": null,
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "The revised reference does not change the way already addressed for the ELP in CAR FCL and CAR ATCO extensively",
         "briefOnWorkRequired": "The English language proficiency testing is conducted by the Civil Aviation Authority of Oman approved language assessment bodies only . The regulations regarding contact licensing and air traffic controller licensing goes into great detail in making sure that all the aspects along with the holistic descriptors for English language testing are complied with in accordance with the standards ."
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2140,17 +2600,24 @@
         "Doc 10159"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": "Reference revised",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
+        "fcl": "Imtiaz",
         "aw": null,
-        "atc": null,
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "The revised reference does not change the way already addressed for the ELP in CAR FCL and CAR ATCO extensively",
         "briefOnWorkRequired": "The English language proficiency testing conducted Oman under the approvals granted by the Civil Aviation Authority fully meet the requirements call the English language testing as required in annex 1 and under the guidance of document 9835 . The testing for English language proficiency is conducted mainly for the flight crew under car FCL and also for the air traffic controllers under car atco ."
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2167,17 +2634,24 @@
         "Part I, 2.8"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2194,17 +2668,24 @@
         "Part I, 2.8"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "Imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2227,17 +2708,24 @@
         "Doc 9841"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": "Question revised for clarity.",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "imtiaz",
+        "sms": null,
         "workRequired": "Minor changes may be required if approved since the subject is already addressed in the CARs for the training organizations especially in CAR ORA for the aircrew and CAR ATCO for the ATCOs training organizations",
         "briefOnWorkRequired": "The Civil Aviation Authority of Oman has specific regulations for the approval of training organisations with specific regard 2 standards and recommended practices that deal with the approval of training organizations within the country and also foreign countries you're just a baby today"
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2257,17 +2745,24 @@
         "Part II, 7.3 & 7.4"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": "Question revised for clarity.  Guidance revised for clarity.",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "imtiaz",
+        "sms": null,
         "workRequired": "The PQ and the guidance revised for clarity only. The PQ is already addressed and may require details for Tos administered by CAA. The CAA Oman does not administer any TO.",
         "briefOnWorkRequired": "All the particular licensing regulations and specifically regarding the approval of training organizations they cover an explicit details regarding the system that is followed for the initial qualification and maintenance of competency of the instructors at the approved training organisations whether they are performing in line with their authorizations and qualifications"
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2292,17 +2787,24 @@
         "Doc 9841, C10"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2321,17 +2823,24 @@
         "Doc 9841"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "Guidance revised for clarity. Reference revised",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "imtiaz",
+        "sms": null,
         "workRequired": "The revised guidance is already covered and Oman CAA already addresses this matter.",
         "briefOnWorkRequired": "The Civil Aviation Authority of Oman issues the approved training organization certificates with all the details as required under annex 1 and also under document 9841  At present the approval certificates for the training organizations are in exact format that of the European regulations giving out the certification details and the training specification details for each training organization"
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2352,17 +2861,24 @@
         "C3 & App. A"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": "Guidance revised for clarity.",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "imtiaz",
+        "sms": null,
         "workRequired": "The revised guidance is already covered and Oman CAA already addresses this matter.",
         "briefOnWorkRequired": "Civil Aviation Authority Oman in its specific license regulations and regarding the certification of approved training organization requires all the training organisations to develop a training and procedures manual according to which the approved training shall be conducted within an approved training organization in accordance with the standards and recommended practices ."
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2389,17 +2905,24 @@
         "Doc 9841"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2423,17 +2946,24 @@
         "C2 & C9"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2450,17 +2980,24 @@
         "Part II, C10"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": "imtiaz",
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 80
       }
     },
     {
@@ -2483,17 +3020,24 @@
         "Doc 9841"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": "Question revised for clarity. Guidance revised for clarity. Reference revised",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "Highly recommended that Oman CAA devises a separate regulation that deals with the certification process of foreign ATOs in line with the guidance provided in ICAO Doc 9841. At the moment, a large number of foreign ATOs are certified by Oman CAA and there is a need to have a clear process as to which procedure is being adopted for local and foreign ATOs. The Doc 9841 has enough guidance on the subject.",
         "briefOnWorkRequired": "The Civil Aviation Authority of Oman approves full training organizations for the training of its license holders for the issue of license and also for the issue of ratings . All such approvals are carried out in accordance with the specific licensing regulations for the specific licenses for example the air crew foreign training organizations are approved in accordance with car orawhile for air traffic controllers training in foreign countries the car atco describes the approval process . The Civil Aviation Authority Oman we'll need to establish detailed procedures and regulations in order to be able to validate the abilities of foreign training organisations end the way the foreign state oversights these training organizations with the basic aim to ensure that the standards and recommended practices are all complied with ."
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2518,17 +3062,24 @@
         "Part II, C7"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": "Guidance revised for clarity. Reference revised",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "The guidance has been revised and also the reference has been revised for clarity purpose only the Civil Aviation Authority of Oman is already doing the needful in a satisfactory manner",
         "briefOnWorkRequired": "The Civil Aviation Authority Oman has detailed processes and procedures for evaluating and approving the training programs that relate to the first issuance of licenses and ratings . The Civil Aviation Authority of Oman does not fall under any regional safety oversight organization and usually the application of article 83 best with regard to the training organizations is not applicable ."
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2542,20 +3093,27 @@
       "icaoReferences": [
         "STD",
         "A1",
-        4.2
+        "4.2"
       ],
       "isPPQ": false,
+      "isATC": false,
       "amendmentDescription": "Merged with PQ 3.803. Guidance revised for clarity.",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
         "fcl": null,
-        "aw": null,
+        "aw": "Malka",
         "atc": null,
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "The merging and revision of guidance is already addressed",
         "briefOnWorkRequired": "The Civil Aviation Authority Oman has detailed regulations for the licensing of aircraft maintenance technicians and engineers and mechanics and those regulations fully cover the privileges of the licences and the endorsed ratings for the aircraft maintenance technicians engineers and mechanics ."
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -2571,17 +3129,24 @@
         "Doc 9760"
       ],
       "isPPQ": true,
+      "isATC": false,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
         "fcl": null,
-        "aw": null,
+        "aw": "Malka",
         "atc": null,
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -2594,21 +3159,28 @@
       "icaoReferences": [
         "STD",
         "A1",
-        4.2,
+        "4.2",
         "Doc 9760"
       ],
       "isPPQ": false,
+      "isATC": false,
       "amendmentDescription": "Guidance revised for clarity",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
         "fcl": null,
-        "aw": null,
+        "aw": "Malka",
         "atc": null,
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "The revision of guidance regarding the skills is already addressed in CARs",
         "briefOnWorkRequired": "The Civil Aviation Authority Oman regulations for the licensing of aircraft maintenance technicians engineers and mechanics cover in detail regarding the validation of skill with particular reference to assessment of practical skills"
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -2623,21 +3195,28 @@
       "icaoReferences": [
         "STD",
         "A1",
-        4.2,
+        "4.2",
         "Doc 9760"
       ],
       "isPPQ": false,
+      "isATC": false,
       "amendmentDescription": "Reference revised",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
         "fcl": null,
-        "aw": null,
+        "aw": "Malka",
         "atc": null,
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "Yes this is already addressed on the technicians licences in terms of ratings",
         "briefOnWorkRequired": "This elevation authority Oman regulations recording the licensing of aircraft maintenance technicians engineers and mechanics license fully covered under the car 66 and the training under car 145 . The license for the aircraft maintenance technicians engineers mechanics is issued in accordance with the standards and recommended practices and ensures the marking and endorsement of basic ratings and type ratings which further ensure that the scope in terms of complexity of the tasks related to the certification is duly documented on the license ."
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -2656,17 +3235,24 @@
         "Part II, C10"
       ],
       "isPPQ": false,
+      "isATC": false,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
         "mainResponsibility": "PEL",
         "partResponsibility": null,
         "fcl": null,
-        "aw": null,
+        "aw": "Malka",
         "atc": null,
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -2685,17 +3271,24 @@
         "Part II, C10"
       ],
       "isPPQ": false,
+      "isATC": false,
       "amendmentDescription": "Reference revised",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
         "fcl": null,
-        "aw": null,
+        "aw": "Malka",
         "atc": null,
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "Already covered. May not require any additions.",
         "briefOnWorkRequired": "The Civil Aviation Authority Oman regulations for licensing of aircraft maintenance technicians engineers mechanics covers the enforcement which is further elaborated in the Civil Aviation regulations of Oman regarding enforcement on the license holders ."
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -2712,6 +3305,7 @@
         "4.3, 4.4 & 4.5"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "Guidance revised for clarity",
       "defaults": {
         "statusOfImplementation": "Satisfactory. To be reviewed for amendment.",
@@ -2719,10 +3313,16 @@
         "partResponsibility": null,
         "fcl": null,
         "aw": null,
-        "atc": null,
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "The existing CAR covers all the required ratings and their privileges.",
         "briefOnWorkRequired": "The Civil Aviation Authority Oman has promulgated detailed regulations that cover the standards for the licensing and training of the air traffic controllers in Oman . The subject regulation car atco covers all the licensing knowledge training experience and skill requirements and also include in detail the privileges that shall be observed while exercising the privileges of the air traffic controller license and the endorsed ratings for the air traffic control provisions ."
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2740,6 +3340,7 @@
         "4.3, 4.4 & 4.5"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -2747,10 +3348,16 @@
         "partResponsibility": null,
         "fcl": null,
         "aw": null,
-        "atc": null,
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2767,6 +3374,7 @@
         "4.3, 4.4 & 4.5"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -2774,10 +3382,16 @@
         "partResponsibility": null,
         "fcl": null,
         "aw": null,
-        "atc": null,
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 100
       }
     },
     {
@@ -2795,6 +3409,7 @@
         "Part II, C10"
       ],
       "isPPQ": true,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -2802,10 +3417,16 @@
         "partResponsibility": null,
         "fcl": null,
         "aw": null,
-        "atc": null,
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 50
       }
     },
     {
@@ -2824,6 +3445,7 @@
         "Part II, C10"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": null,
       "defaults": {
         "statusOfImplementation": null,
@@ -2831,10 +3453,16 @@
         "partResponsibility": null,
         "fcl": null,
         "aw": null,
-        "atc": null,
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": null,
         "briefOnWorkRequired": null
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": 80
       }
     },
     {
@@ -2875,22 +3503,29 @@
         "App 1, 2.",
         "GM",
         "Doc 9734, Part A",
-        3.2,
+        "3.2",
         "Doc 9859",
         "1.3.5 & 9.7.4"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "NEW PQ",
       "defaults": {
         "statusOfImplementation": "To be reviewed",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
-        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \r\nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -2924,22 +3559,29 @@
         "App 2",
         "GM",
         "Doc 9734, Part A",
-        3.4,
+        "3.4",
         "Doc 9859",
         "8.3.7"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "NEW PQ",
       "defaults": {
         "statusOfImplementation": "To be reviewed",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
-        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \r\nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -2964,22 +3606,29 @@
         "App 2",
         "GM",
         "Doc 9734, Part A",
-        3.5,
+        "3.5",
         "Doc 9859",
         "8.3.8"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "NEW PQ",
       "defaults": {
         "statusOfImplementation": "To be reviewed",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
-        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \r\nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -3015,23 +3664,30 @@
         "App 1, 5.1",
         "GM",
         "Doc 9734, Part A",
-        3.5,
+        "3.5",
         "Doc 9859",
         "8.3.8 &",
         "9.3.8.3"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "NEW PQ",
       "defaults": {
         "statusOfImplementation": "To be reviewed",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
-        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \r\nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -3052,22 +3708,29 @@
         "App 1, 5.1",
         "GM",
         "Doc 9734, Part A",
-        3.5,
+        "3.5",
         "Doc 9859",
         "8.3.8"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "NEW PQ",
       "defaults": {
         "statusOfImplementation": "To be reviewed",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
         "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety"
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -3082,28 +3745,35 @@
       "icaoReferences": [
         "STD",
         "A19",
-        4.1,
+        "4.1",
         "App 1, 6",
         "App 2",
         "GM",
         "Doc 9734, Part A",
-        3.6,
+        "3.6",
         "Doc 9859",
         "8.4.6 &",
         "8.4.7"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "NEW PQ",
       "defaults": {
         "statusOfImplementation": "To be reviewed",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
-        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \r\nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -3131,17 +3801,24 @@
         "9.4.6"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "NEW PQ",
       "defaults": {
         "statusOfImplementation": "To be reviewed",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
         "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety"
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -3169,17 +3846,24 @@
         "8.4.7."
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "NEW PQ",
       "defaults": {
         "statusOfImplementation": "To be reviewed",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
-        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \r\nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -3207,17 +3891,24 @@
         "9.5.6"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "NEW PQ",
       "defaults": {
         "statusOfImplementation": "To be reviewed",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
-        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \r\nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -3242,17 +3933,24 @@
         "9.6.4"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "NEW PQ",
       "defaults": {
         "statusOfImplementation": "To be reviewed",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
-        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \r\nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     },
     {
@@ -3279,17 +3977,24 @@
         "9.6.5"
       ],
       "isPPQ": false,
+      "isATC": true,
       "amendmentDescription": "NEW PQ",
       "defaults": {
         "statusOfImplementation": "To be reviewed",
         "mainResponsibility": "PEL",
         "partResponsibility": null,
-        "fcl": null,
-        "aw": null,
-        "atc": null,
+        "fcl": "Imtiaz",
+        "aw": "Malka",
+        "atc": "Asim",
         "med": null,
+        "foo": null,
+        "sms": null,
         "workRequired": "New PQ will be properly addressed with the implementation of the new CAR SMS along with its AMCs and GMs. For the time being. The matter of SMS only relates to training organizations that are involved in aircraft operations which is Oman Aviation Academy. The OAA is meeting most of the SMS related requirements in accordance with the provisions in CAR ORA for the time being.",
-        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+        "briefOnWorkRequired": "The new subject for the implementation of SMS and safety management systems towards the organisations certified by licensing specifically pertain only to the training organizations . As specifically mentioned under annex 1 and annex 19 as per the following statement :       Annex 19 includes safety management provisions for an approved training organization that is exposed to safety \r\nrisks related to aircraft operations during the provision of its services.                        In this regard the organizations that need to be implemented with a safety management system certified under the standards of annex1 are only the training organizations that are involved in the operations of aircraft . The training organizations that deal with the aircraft operation are certified under car ora of Oman Civil Aviation Authority. The car oraspecifically addresses most of the requirements off safety management system in a training organization that Is certified for the training of Pilots . The car orahas specific and detailed requirements for the implementation of a safety management system within a training organization that deals with the training of pilots and such organizations are required to develop a proper manual for the implementation of a safety management system. With the advent off Annex-19 the implementation with specific and required standards and details shall have to be addressed property when the civil deviation authority of Oman finally issues the car SMS including the AMC and the GM's"
+      },
+      "sourceMeta": {
+        "extraNotes": [],
+        "progressPct": null
       }
     }
   ]

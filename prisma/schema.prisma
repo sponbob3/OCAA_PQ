@@ -39,6 +39,7 @@ model ProtocolQuestion {
   guidanceJson         String  @default("[]")
   icaoReferencesJson   String  @default("[]")
   isPPQ                Boolean @default(false)
+  isATC                Boolean @default(false)
   amendmentDescription String?
 
   // OCAA response fields (columns H-P in the source)
@@ -54,8 +55,9 @@ model ProtocolQuestion {
   briefOnWorkRequired    String?
   internalNotes          String?
 
-  evidenceLinks EvidenceLink[]
-  statusHistory StatusHistory[]
+  evidenceLinks    EvidenceLink[]
+  statusHistory    StatusHistory[]
+  fieldSubmissions FieldSubmission[]
 
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
@@ -65,6 +67,7 @@ model ProtocolQuestion {
   @@index([ce])
   @@index([status])
   @@index([isPPQ])
+  @@index([isATC])
   @@index([auditArea])
 }
 
@@ -89,7 +92,75 @@ model EvidenceLink {
   createdById String?
   createdBy   User?            @relation("EvidenceCreatedBy", fields: [createdById], references: [id])
 
+  // Admin sign-off. Unlike FieldSubmission (one-approved-per-thread),
+  // evidence approval is per-item: every attached link is validated
+  // independently by an admin, so multiple evidences on the same PQ can
+  // be approved at once.
+  approvedAt   DateTime?
+  approvedById String?
+  approvedBy   User?     @relation("EvidenceApprover", fields: [approvedById], references: [id])
+
   @@index([pqId])
+  @@index([approvedAt])
+}
+
+// FieldSubmission: append-only comment-thread for every editable OCAA response
+// field on a PQ. A "save" produces a new row. Past submissions are never
+// edited; revisions create a new submission that references the predecessors
+// via `revisesIdsJson`. Exactly one submission per (pqId, fieldKey) can be
+// marked approved at a time (enforced in the service layer, since SQL partial
+// unique indexes on booleans are awkward across DBs).
+model FieldSubmission {
+  id       Int              @id @default(autoincrement())
+  pq       ProtocolQuestion @relation(fields: [pqId], references: [id], onDelete: Cascade)
+  pqId     String
+  fieldKey FieldKey
+  seq      Int // per (pqId, fieldKey), starts at 1
+
+  value          String
+  revisesIdsJson String @default("[]") // JSON array of FieldSubmission.id
+
+  author   User   @relation("SubmissionAuthor", fields: [authorId], references: [id])
+  authorId String
+  // Optional display-name override. Used when the original attribution
+  // (e.g. a parenthetical "(Imtiaz)" in a source cell) doesn't map to a
+  // real user in the system. When set, the UI prefers this string over
+  // the joined author.name but does NOT grant admin styling.
+  authorLabel String?
+
+  approvedAt   DateTime?
+  approvedBy   User?     @relation("SubmissionApprover", fields: [approvedById], references: [id])
+  approvedById String?
+
+  createdAt DateTime @default(now())
+
+  // Marks a submission imported from the source workbook as part of the
+  // immutable initial template. These rows cannot be deleted, and the
+  // reset-to-initial tool preserves them. They can still be revised: a
+  // revision creates a new (non-initial) submission that references the
+  // initial one via revisesIdsJson.
+  isInitial Boolean @default(false)
+
+  @@unique([pqId, fieldKey, seq])
+  @@index([pqId, fieldKey, createdAt])
+  @@index([approvedAt])
+  @@index([isInitial])
+}
+
+enum FieldKey {
+  STATUS_OF_IMPLEMENTATION
+  MAIN_RESPONSIBILITY
+  PART_RESPONSIBILITY
+  FCL
+  AW
+  ATC
+  MED
+  FOO
+  SMS
+  WORK_REQUIRED
+  BRIEF_ON_WORK_REQUIRED
+  INTERNAL_NOTES
+  OCAA_FINAL_RESPONSE
 }
 
 // Audit trail for status changes. One row per transition.
@@ -116,9 +187,15 @@ model User {
   role      Role     @default(EDITOR)
   createdAt DateTime @default(now())
 
-  pqUpdates       ProtocolQuestion[] @relation("PQUpdatedBy")
-  evidenceCreated EvidenceLink[]     @relation("EvidenceCreatedBy")
-  statusChanges   StatusHistory[]    @relation("HistoryChangedBy")
+  pqUpdates        ProtocolQuestion[] @relation("PQUpdatedBy")
+  evidenceCreated  EvidenceLink[]     @relation("EvidenceCreatedBy")
+  evidenceApproved EvidenceLink[]     @relation("EvidenceApprover")
+  statusChanges    StatusHistory[]    @relation("HistoryChangedBy")
+
+  submissionsAuthored FieldSubmission[] @relation("SubmissionAuthor")
+  submissionsApproved FieldSubmission[] @relation("SubmissionApprover")
+
+  @@index([role])
 }
 
 enum Role {

@@ -2,21 +2,14 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
 import type { Status } from "@prisma/client";
 import { STATUS_META } from "@/lib/constants";
+import { getCurrentUser } from "@/lib/current-user";
 
 const VALID_STATUSES = Object.keys(STATUS_META) as Status[];
 
+// PATCH is now status-only. All text-field content moved to the append-only
+// FieldSubmission model and is written through /api/pqs/:pqNo/submissions.
 type PatchBody = Partial<{
   status: Status;
-  statusOfImplementation: string;
-  mainResponsibility: string;
-  partResponsibility: string;
-  fcl: string;
-  aw: string;
-  atc: string;
-  med: string;
-  workRequired: string;
-  briefOnWorkRequired: string;
-  internalNotes: string;
   statusChangeNote: string;
 }>;
 
@@ -38,7 +31,10 @@ export async function PATCH(
     return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
-  if (body.status && !VALID_STATUSES.includes(body.status)) {
+  if (!body.status) {
+    return NextResponse.json({ error: "Missing status" }, { status: 400 });
+  }
+  if (!VALID_STATUSES.includes(body.status)) {
     return NextResponse.json({ error: "Invalid status" }, { status: 400 });
   }
 
@@ -50,22 +46,12 @@ export async function PATCH(
     return NextResponse.json({ error: "PQ not found" }, { status: 404 });
   }
 
+  const user = await getCurrentUser();
+
   const updated = await prisma.$transaction(async (tx) => {
     const pq = await tx.protocolQuestion.update({
       where: { pqNo },
-      data: {
-        status: body.status,
-        statusOfImplementation: emptyToNull(body.statusOfImplementation),
-        mainResponsibility: emptyToNull(body.mainResponsibility),
-        partResponsibility: emptyToNull(body.partResponsibility),
-        fcl: emptyToNull(body.fcl),
-        aw: emptyToNull(body.aw),
-        atc: emptyToNull(body.atc),
-        med: emptyToNull(body.med),
-        workRequired: emptyToNull(body.workRequired),
-        briefOnWorkRequired: emptyToNull(body.briefOnWorkRequired),
-        internalNotes: emptyToNull(body.internalNotes),
-      },
+      data: { status: body.status, updatedById: user.id },
     });
 
     if (body.status && body.status !== existing.status) {
@@ -75,6 +61,7 @@ export async function PATCH(
           fromStatus: existing.status,
           toStatus: body.status,
           note: emptyToNull(body.statusChangeNote),
+          changedById: user.id,
         },
       });
     }
@@ -93,8 +80,21 @@ export async function GET(
   const pq = await prisma.protocolQuestion.findUnique({
     where: { pqNo },
     include: {
-      evidenceLinks: true,
+      evidenceLinks: {
+        orderBy: { createdAt: "asc" },
+        include: {
+          createdBy: { select: { id: true, name: true, role: true } },
+          approvedBy: { select: { id: true, name: true, role: true } },
+        },
+      },
       statusHistory: { orderBy: { changedAt: "desc" } },
+      fieldSubmissions: {
+        orderBy: [{ fieldKey: "asc" }, { seq: "desc" }],
+        include: {
+          author: { select: { id: true, name: true, role: true } },
+          approvedBy: { select: { id: true, name: true, role: true } },
+        },
+      },
     },
   });
   if (!pq) return NextResponse.json({ error: "Not found" }, { status: 404 });

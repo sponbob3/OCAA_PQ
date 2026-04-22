@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ProtocolQuestion } from "@prisma/client";
 import { StatusBadge } from "./StatusBadge";
-import { ChevronRight, Star } from "lucide-react";
+import { ChevronRight, RadioTower, Star } from "lucide-react";
 
 export function PQCard({ pq }: { pq: ProtocolQuestion }) {
   return (
@@ -21,6 +21,12 @@ export function PQCard({ pq }: { pq: ProtocolQuestion }) {
               <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-300 text-xs font-medium border border-amber-400/25">
                 <Star size={10} className="fill-amber-400 text-amber-400" />
                 PPQ
+              </span>
+            )}
+            {pq.isATC && (
+              <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-300 text-xs font-medium border border-sky-400/25">
+                <RadioTower size={10} />
+                ATC
               </span>
             )}
           </div>

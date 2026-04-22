@@ -33,7 +33,9 @@ function main() {
     process.exit(1);
   }
 
-  const wb = XLSX.readFile(SOURCE_XLSX);
+  // cellStyles: true preserves fill colors so we can detect the yellow
+  // highlighting on "Sheet1" columns U/V that marks a PQ as ATC-relevant.
+  const wb = XLSX.readFile(SOURCE_XLSX, { cellStyles: true });
   const sheet = wb.Sheets[wb.SheetNames[0]];
   const rows = XLSX.utils.sheet_to_json<Row>(sheet, { defval: null });
 
@@ -51,6 +53,119 @@ function main() {
     grouped.get(currentPQ)!.push(r);
   }
 
+  // Sheet1 carries per-PQ metadata that isn't in the primary "PEL PQs"
+  // sheet:
+  //   - Columns U/V: yellow fill (FFFF00) marks PQs as ATC-relevant.
+  //   - Columns K..P: a merged-header block labeled "Responsible PEL
+  //                 Area" with sub-headers on row 2:
+  //                     K=FCL  L=AW  M=ATC  N=MED  O=FOO  P=SMS
+  //                 Each cell holds the name of the OCAA person
+  //                 responsible for that sub-area on this PQ.
+  //                 (The primary "PEL PQs" sheet has FCL/AW/ATC/MED as
+  //                 headers in columns J..M too, but the data cells
+  //                 there are blank - the real data lives here.)
+  //   - Column T:   free-form internal notes, sometimes multi-entry
+  //                 with parenthetical authors like "(Imtiaz)".
+  //   - Column V value (number):  completion %, encoded either as a
+  //                 fraction (0.8, 1) or whole percent (80, 100).
+  // We walk Sheet1 once, forward-fill the PQ number from column B, and
+  // gather all of these per PQ. Continuation rows (blank B) still count
+  // toward the current PQ.
+  const atcPQs = new Set<string>();
+  const notesByPQ = new Map<string, string[]>();
+  const progressByPQ = new Map<string, number>();
+  // Per-PQ responsible-person names for each PEL sub-area.
+  type PelArea = {
+    fcl: string | null;
+    aw: string | null;
+    atc: string | null;
+    med: string | null;
+    foo: string | null;
+    sms: string | null;
+  };
+  const pelAreaByPQ = new Map<string, PelArea>();
+
+  const SUB_AREA_COLS: Array<{ col: string; key: keyof PelArea }> = [
+    { col: "K", key: "fcl" },
+    { col: "L", key: "aw" },
+    { col: "M", key: "atc" },
+    { col: "N", key: "med" },
+    { col: "O", key: "foo" },
+    { col: "P", key: "sms" },
+  ];
+
+  const secondary = wb.Sheets["Sheet1"];
+  if (secondary) {
+    const range = XLSX.utils.decode_range(secondary["!ref"] ?? "A1:A1");
+    let pq: string | null = null;
+    // Skip the first two rows: row 1 is the merged header, row 2 is the
+    // sub-header names. Data starts on row 3 (index 2).
+    for (let rIdx = range.s.r + 2; rIdx <= range.e.r; rIdx++) {
+      const pqCell = secondary[`B${rIdx + 1}`] as XLSX.CellObject | undefined;
+      if (
+        pqCell &&
+        pqCell.v !== null &&
+        pqCell.v !== undefined &&
+        String(pqCell.v).trim() !== ""
+      ) {
+        const n = Number(pqCell.v);
+        if (!Number.isNaN(n)) pq = n.toFixed(3);
+      }
+      if (!pq) continue;
+
+      for (const col of ["U", "V"] as const) {
+        const cell = secondary[col + (rIdx + 1)] as XLSX.CellObject | undefined;
+        const rgb = (cell as unknown as { s?: { fgColor?: { rgb?: string } } })
+          ?.s?.fgColor?.rgb;
+        if (rgb && rgb.toUpperCase() === "FFFF00") {
+          atcPQs.add(pq);
+          break;
+        }
+      }
+
+      // Collect PEL sub-area responsible-person names, first non-blank
+      // cell wins per (pq, sub-area) since continuation rows sometimes
+      // repeat the same value.
+      let area = pelAreaByPQ.get(pq);
+      if (!area) {
+        area = {
+          fcl: null,
+          aw: null,
+          atc: null,
+          med: null,
+          foo: null,
+          sms: null,
+        };
+        pelAreaByPQ.set(pq, area);
+      }
+      for (const { col, key } of SUB_AREA_COLS) {
+        if (area[key] != null) continue;
+        const cell = secondary[col + (rIdx + 1)] as XLSX.CellObject | undefined;
+        const v = clean(cell?.v);
+        if (v) area[key] = v;
+      }
+
+      const tCell = secondary[`T${rIdx + 1}`] as XLSX.CellObject | undefined;
+      const tVal = clean(tCell?.v);
+      if (tVal) {
+        const arr = notesByPQ.get(pq) ?? [];
+        arr.push(tVal);
+        notesByPQ.set(pq, arr);
+      }
+
+      const vCell = secondary[`V${rIdx + 1}`] as XLSX.CellObject | undefined;
+      if (vCell && vCell.v != null && !progressByPQ.has(pq)) {
+        const n = Number(vCell.v);
+        if (!Number.isNaN(n)) {
+          // Normalize: values at or below 1 are fractions (0.8 -> 80%,
+          // 1 -> 100%). Everything else is already a percentage.
+          const pct = n <= 1 ? Math.round(n * 100) : Math.round(n);
+          progressByPQ.set(pq, pct);
+        }
+      }
+    }
+  }
+
   const pqs = [];
   for (const [pqNo, groupRows] of grouped.entries()) {
     const header = groupRows[0];
@@ -63,6 +178,8 @@ function main() {
       .map((r) => clean(r["ICAO References"]))
       .filter((v): v is string => v !== null);
 
+    const area = pelAreaByPQ.get(pqNo);
+
     pqs.push({
       pqNo,
       ce: clean(header["CE"]),
@@ -70,17 +187,29 @@ function main() {
       guidance,
       icaoReferences: refs,
       isPPQ: clean(header["PPQ"]) === "PPQ",
+      isATC: atcPQs.has(pqNo),
       amendmentDescription: clean(header["Description of Amendment"]),
+      // Note: the PEL sub-area fields (fcl/aw/atc/med/foo/sms) are
+      // intentionally NOT read from the primary sheet - those columns
+      // exist there but are blank in every data row. The real names
+      // come from Sheet1 via pelAreaByPQ.
       defaults: {
         statusOfImplementation: clean(header["Status of Implementation"]),
         mainResponsibility: clean(header["Main PQ responsibility"]),
         partResponsibility: clean(header["Part responsibility"]),
-        fcl: clean(header["FCL"]),
-        aw: clean(header["AW"]),
-        atc: clean(header["ATC"]),
-        med: clean(header["MED"]),
+        fcl: area?.fcl ?? null,
+        aw: area?.aw ?? null,
+        atc: area?.atc ?? null,
+        med: area?.med ?? null,
+        foo: area?.foo ?? null,
+        sms: area?.sms ?? null,
         workRequired: clean(header["WORK REQUIRED (Reccomendations)"]),
         briefOnWorkRequired: clean(header["BRIEF ON THE WORK REQUIRED (Reccomendations)"]),
+      },
+      sourceMeta: {
+        extraNotes: notesByPQ.get(pqNo) ?? [],
+        progressPct:
+          progressByPQ.has(pqNo) ? progressByPQ.get(pqNo)! : null,
       },
     });
   }
@@ -102,6 +231,7 @@ function main() {
       source_file: path.basename(SOURCE_XLSX),
       total_pqs: pqs.length,
       ppq_count: pqs.filter((p) => p.isPPQ).length,
+      atc_count: pqs.filter((p) => p.isATC).length,
     },
     criticalElements,
     pqs,

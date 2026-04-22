@@ -1,7 +1,7 @@
 // Seeds the DB from data/pel-pqs.json. Safe to run multiple times: uses upsert.
 //
 // Only the ICAO-owned (immutable) side of each PQ is written: pqNo, ce, question,
-// guidance, icaoReferences, isPPQ, amendmentDescription, auditArea.
+// guidance, icaoReferences, isPPQ, isATC, amendmentDescription, auditArea.
 //
 // The `defaults` block in pel-pqs.json preserves the source Excel's original
 // response-side content (columns H, I, N, O, P) for future reference or optional
@@ -25,6 +25,7 @@ type SeedPQ = {
   guidance: string[];
   icaoReferences: string[];
   isPPQ: boolean;
+  isATC?: boolean;
   amendmentDescription: string | null;
   defaults: {
     statusOfImplementation: string | null;
@@ -34,6 +35,8 @@ type SeedPQ = {
     aw: string | null;
     atc: string | null;
     med: string | null;
+    foo: string | null;
+    sms: string | null;
     workRequired: string | null;
     briefOnWorkRequired: string | null;
   };
@@ -59,6 +62,7 @@ async function main() {
       guidanceJson: JSON.stringify(pq.guidance),
       icaoReferencesJson: JSON.stringify(pq.icaoReferences),
       isPPQ: pq.isPPQ,
+      isATC: pq.isATC ?? false,
       amendmentDescription: pq.amendmentDescription,
     };
 

@@ -66,10 +66,14 @@ export const STATUS_ORDER: Status[] = [
   "COMPLETE",
 ];
 
-// The four PEL sub-areas (columns J-M in the source sheet).
+// The six PEL sub-areas (Sheet1 columns K-P in the source workbook,
+// under the merged "Responsible PEL Area" header). Each carries the
+// name of the OCAA person responsible for that sub-area on a PQ.
 export const PEL_SUBAREAS = [
   { key: "fcl", label: "FCL", full: "Flight Crew Licensing" },
   { key: "aw", label: "AW", full: "Airworthiness personnel" },
   { key: "atc", label: "ATC", full: "Air Traffic Controllers" },
   { key: "med", label: "MED", full: "Medical" },
+  { key: "foo", label: "FOO", full: "Flight Operations Officer / Dispatcher" },
+  { key: "sms", label: "SMS", full: "Safety Management Systems" },
 ] as const;

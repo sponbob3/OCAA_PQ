@@ -27,11 +27,17 @@ export function FilterBar({ ces }: { ces: string[] }) {
   const activeCE = params.get("ce") ?? "";
   const activeStatus = params.get("status") ?? "";
   const activePPQ = params.get("ppq") === "1";
+  const activeATC = params.get("atc") === "1";
   const activeQ = params.get("q") ?? "";
   const activeSort = params.get("sort") ?? "pq";
 
   const hasActiveFilters =
-    activeCE || activeStatus || activePPQ || activeQ || activeSort !== "pq";
+    activeCE ||
+    activeStatus ||
+    activePPQ ||
+    activeATC ||
+    activeQ ||
+    activeSort !== "pq";
 
   return (
     <div className="space-y-3">
@@ -104,6 +110,18 @@ export function FilterBar({ ces }: { ces: string[] }) {
             className="accent-amber-400"
           />
           PPQ only
+        </label>
+
+        <label
+          className={`${CONTROL} inline-flex items-center gap-2 cursor-pointer select-none`}
+        >
+          <input
+            type="checkbox"
+            checked={activeATC}
+            onChange={(e) => updateParam("atc", e.target.checked ? "1" : null)}
+            className="accent-sky-400"
+          />
+          ATC only
         </label>
 
         {hasActiveFilters && (
