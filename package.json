@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
+    "build": "prisma generate && prisma migrate deploy && next build",
     "start": "next start",
     "lint": "next lint",
     "seed": "tsx scripts/seed.ts",
+    "backfill": "tsx scripts/backfill-from-defaults.ts",
+    "reset-to-initial": "tsx scripts/reset-to-initial.ts",
     "import-excel": "tsx scripts/import-excel.ts",
     "db:reset": "prisma migrate reset --force && npm run seed",
     "db:migrate": "prisma migrate deploy",
