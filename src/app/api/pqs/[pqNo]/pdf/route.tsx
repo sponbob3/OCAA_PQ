@@ -1,7 +1,7 @@
 // GET /api/pqs/[pqNo]/pdf
 //
-// Renders the ICAO ICVM PQ report as a PDF and streams it back.
-// Data sources (mirrors the PQ detail page exactly):
+// Renders the Final USOAP Response Document for a PQ as a PDF and
+// streams it back. Data sources (mirrors the PQ detail page exactly):
 //   - ProtocolQuestion row: pqNo, ce, question, guidance, icaoReferences
 //   - Status of Implementation: latest approved submission, else latest
 //   - OCAA Final Response:      latest approved submission, else latest
@@ -74,7 +74,7 @@ export async function GET(
     status: 200,
     headers: {
       "Content-Type": "application/pdf",
-      "Content-Disposition": `attachment; filename="ICVM-PQ-${pq.pqNo}.pdf"`,
+      "Content-Disposition": `attachment; filename="USOAP-Response-PQ-${pq.pqNo}.pdf"`,
       "Cache-Control": "no-store",
     },
   });

@@ -1,10 +1,10 @@
 // PQ -> PDF renderer.
 //
-// Visual layout follows the official ICAO ICVM PQ template: a dark
-// navy title band at the top with the audit name, a row holding the
-// PQ number, CE badge, and CAA logo, then the protocol question,
-// guidance, remarks (Status of Implementation), answer (OCAA final
-// response) + numbered evidence list, and an ICAO references footer.
+// Visual layout: a dark navy title band at the top with the document
+// name, a row holding the PQ number, CE badge, and CAA logo, then the
+// protocol question, guidance, remarks (Status of Implementation),
+// answer (OCAA Final Response) + numbered evidence list, and an ICAO
+// references footer.
 //
 // Only the four pieces of data requested end up on the page:
 //   1. ICAO placeholder info (pqNo, CE, question, guidance, ICAO refs)
@@ -255,22 +255,27 @@ export function PQReport({
 
   const icaoRefLine = pq.icaoReferences.filter((r) => r && r.trim()).join(", ");
 
+  // Title composition: always render auditName; only append
+  // " - MONTH YEAR" when either is configured via env vars, otherwise
+  // the title band is just the document name and the office line.
+  const datedSuffix = [PDF_HEADER.auditMonth, PDF_HEADER.auditYear]
+    .filter((p) => p && p.trim())
+    .join(" ")
+    .trim();
+  const titleText = datedSuffix
+    ? `${PDF_HEADER.auditName} - ${datedSuffix}`
+    : PDF_HEADER.auditName;
+
   return (
     <Document
-      title={`ICVM PQ ${pq.pqNo}`}
+      title={`${PDF_HEADER.auditName} - PQ ${pq.pqNo}`}
       author="CAA Oman - DGCAR PEL Office"
       subject={`Protocol Question ${pq.pqNo}`}
     >
       <Page size="A4" style={styles.page}>
         <View style={styles.outerFrame}>
-          {/* Title band - composed from name / month / year so the
-              month and year can be overridden per-audit via env vars
-              without editing the title format string. */}
           <View style={styles.titleBand}>
-            <Text style={styles.titleLine}>
-              {PDF_HEADER.auditName} - {PDF_HEADER.auditMonth}{" "}
-              {PDF_HEADER.auditYear}
-            </Text>
+            <Text style={styles.titleLine}>{titleText}</Text>
             <Text style={styles.officeLine}>{PDF_HEADER.officeLine}</Text>
           </View>
 

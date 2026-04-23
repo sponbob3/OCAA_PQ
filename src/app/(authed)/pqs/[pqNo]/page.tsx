@@ -239,15 +239,15 @@ export default async function PQDetailPage({
             className="inline-block w-[3px] h-4 rounded-full bg-emerald-400"
           />
           <div className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-300">
-            ICVM document
+            USOAP response document
           </div>
         </div>
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div className="text-sm text-ink-300 max-w-xl leading-relaxed">
-            Export this PQ as a formatted ICVM PDF. Pulls the protocol
-            question, guidance, ICAO references, the latest approved
-            Status of Implementation and OCAA final response, and any
-            approved evidence links. Empty fields print as{" "}
+            Export this PQ as the Final USOAP Response Document. Pulls the
+            protocol question, guidance, ICAO references, the latest
+            approved Status of Implementation and OCAA final response,
+            and any approved evidence links. Empty fields print as{" "}
             <span className="italic text-ink-400">Pending</span>.
           </div>
           <a
@@ -255,7 +255,7 @@ export default async function PQDetailPage({
             className="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-brand-500/15 border border-brand-400/40 text-brand-200 hover:bg-brand-500/25 hover:text-brand-100 text-sm font-medium transition-colors"
           >
             <Download size={14} />
-            Download ICVM PDF
+            Download USOAP PDF
           </a>
         </div>
       </section>
