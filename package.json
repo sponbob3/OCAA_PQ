@@ -5,15 +5,20 @@
   "scripts": {
     "dev": "next dev",
     "dev:clone": "DATABASE_URL=postgresql://usoap:usoap@localhost:5432/usoap_prod_clone?schema=public next dev",
-    "build": "prisma generate && prisma migrate deploy && npm run seed && next build",
+    "build": "npm run db:deploy && next build",
     "start": "next start",
     "lint": "next lint",
     "seed": "tsx scripts/seed.ts",
     "backfill": "tsx scripts/backfill-from-defaults.ts",
     "reset-to-initial": "tsx scripts/reset-to-initial.ts",
     "import-excel": "tsx scripts/import-excel.ts",
+    "db:deploy": "prisma generate && prisma migrate deploy",
+    "db:seed:static": "npm run seed",
+    "db:check:atc": "tsx scripts/check-atc.ts",
+    "db:sync:prod-to-local": "bash scripts/sync-prod-to-local.sh",
+    "db:sync:prod-to-local:main": "bash scripts/sync-prod-to-local-main.sh",
     "db:reset": "prisma migrate reset --force && npm run seed",
-    "db:migrate": "prisma migrate deploy",
+    "db:migrate": "npm run db:deploy",
     "postinstall": "prisma generate"
   },
   "prisma": {
