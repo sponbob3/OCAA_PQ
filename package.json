@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && prisma migrate deploy && next build",
+    "dev:clone": "DATABASE_URL=postgresql://usoap:usoap@localhost:5432/usoap_prod_clone?schema=public next dev",
+    "build": "prisma generate && prisma migrate deploy && npm run seed && next build",
     "start": "next start",
     "lint": "next lint",
     "seed": "tsx scripts/seed.ts",
