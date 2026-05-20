@@ -1,0 +1,226 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1734 >>
+stream
+BT
+/F1 11 Tf
+54 740 Td
+() Tj
+0 -14 Td
+(DATABASE SOP \(SIMPLE\)) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(This is the standard way to work with this project.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(1\) Normal deploy \(daily use\)) Tj
+0 -14 Td
+(----------------------------) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Use this when you changed code and want it live.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(cd /Users/rayyanasim/Documents/usoap_tracker) Tj
+0 -14 Td
+(git add -A) Tj
+0 -14 Td
+(git commit -m "your message") Tj
+0 -14 Td
+(git push origin main) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(What happens on deploy:) Tj
+0 -14 Td
+(? schema updates run) Tj
+0 -14 Td
+(? app builds) Tj
+0 -14 Td
+(? live submissions stay as they are) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(2\) Update static PQ data \(only when source sheet changed\)) Tj
+0 -14 Td
+(---------------------------------------------------------) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Use this when ICAO/reference fields changed \(question text, guidance, ATC mapping, etc.\).) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(cd /Users/rayyanasim/Documents/usoap_tracker) Tj
+0 -14 Td
+(npm run db:seed:static) Tj
+0 -14 Td
+(npm run db:check:atc) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(3\) Copy Vercel production data to local \(one command\)) Tj
+0 -14 Td
+(-----------------------------------------------------) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Use this when you want local to match what is on Vercel.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(cd /Users/rayyanasim/Documents/usoap_tracker) Tj
+0 -14 Td
+(npm run db:sync:prod-to-local) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Then run:) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(npm run dev:clone) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(3b\) Copy Vercel production data into your main local DB) Tj
+0 -28 Td
+(Page 1 of 2) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 8 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1356 >>
+stream
+BT
+/F1 11 Tf
+54 740 Td
+(-------------------------------------------------------) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Use this only if you want your normal local DB \(usoap\) to become the) Tj
+0 -14 Td
+(same as Vercel production.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(cd /Users/rayyanasim/Documents/usoap_tracker) Tj
+0 -14 Td
+(npm run db:sync:prod-to-local:main) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(The command asks for confirmation because it overwrites local DB data.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Then run:) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(npm run dev) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(4\) Everyday local run) Tj
+0 -14 Td
+(---------------------) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(If you want your normal local database:) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(npm run dev) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(If you want the local copy of Vercel data:) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(npm run dev:clone) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(5\) Important rules) Tj
+0 -14 Td
+(------------------) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(? Do not run reset commands on production by accident.) Tj
+0 -14 Td
+(? Do not mix multiple dev servers on different ports when checking data.) Tj
+0 -14 Td
+(? If something looks wrong, run:) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(npm run db:check:atc) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(If this check says 0 ATC rows, run npm run db:seed:static.) Tj
+0 -14 Td
+() Tj
+0 -28 Td
+(Page 2 of 2) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000253 00000 n 
+0000002039 00000 n 
+0000002109 00000 n 
+0000002235 00000 n 
+0000003643 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+3713
+%%EOF

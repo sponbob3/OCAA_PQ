@@ -86,7 +86,7 @@ export default async function PQDetailPage({
           )}
           <StatusBadge status={pq.status} />
         </div>
-        <h1 className="text-xl font-semibold text-ink-50 leading-snug tracking-tight">
+        <h1 className="text-xl font-semibold text-ink-50 leading-snug tracking-tight whitespace-pre-line">
           {pq.question}
         </h1>
       </header>

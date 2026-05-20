@@ -23,3 +23,9 @@ tsconfig.tsbuildinfo
 # Local developer Postgres data dir (only if someone runs the binaries directly
 # instead of via docker compose)
 /.local-pg/
+
+# Database dump artifacts (may contain production data). The sync scripts
+# write to prod_dump.sql by default; keep them strictly local.
+prod_dump.sql
+*.sql.gz
+*.dump

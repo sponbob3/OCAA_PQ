@@ -180,10 +180,21 @@ function main() {
 
     const area = pelAreaByPQ.get(pqNo);
 
+    // Protocol Question text can span multiple rows in the source
+    // workbook: the first row holds the lead sentence and subsequent
+    // rows in the same column hold bullet sub-items (e.g. PQ 3.201).
+    // Join every non-blank value with a newline so the UI/PDF can
+    // render them as a multi-line question instead of dropping the
+    // bullets that live on continuation rows.
+    const questionParts = groupRows
+      .map((r) => clean(r["Protocol Question"]))
+      .filter((v): v is string => v !== null);
+    const question = questionParts.length > 0 ? questionParts.join("\n") : null;
+
     pqs.push({
       pqNo,
       ce: clean(header["CE"]),
-      question: clean(header["Protocol Question"]),
+      question,
       guidance,
       icaoReferences: refs,
       isPPQ: clean(header["PPQ"]) === "PPQ",

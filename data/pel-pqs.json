@@ -762,7 +762,7 @@
     {
       "pqNo": "3.201",
       "ce": "CE-5",
-      "question": "Has the State established methods to inform applicants of the:",
+      "question": "Has the State established methods to inform applicants of the:\n• requirements to be met for the various licences and ratings; and\n• the documents to be submitted for the application process?",
       "guidance": [
         "1) Review available methods for informing applicants of the different licences and ratings.",
         "2) Review list of application forms for all types of licences, ratings or examinations.",
@@ -990,7 +990,7 @@
     {
       "pqNo": "3.259",
       "ce": "CE-6",
-      "question": "If the State issues civil licences to military pilots, has a system been implemented for",
+      "question": "If the State issues civil licences to military pilots, has a system been implemented for\na) issuing civil pilot licences and ratings; and\nb) granting exemptions?",
       "guidance": [
         "1) Review the rules and procedures followed for the conversion of military qualifications and experience to equivalent civil licences and ratings.",
         "2) Sample cases for review to confirm effective implementation.",
@@ -1909,7 +1909,7 @@
     {
       "pqNo": "3.422",
       "ce": "CE-6",
-      "question": "If the State authorizes its national licence holders to perform their medical examinations in a foreign State, has a system been implemented to ensure:",
+      "question": "If the State authorizes its national licence holders to perform their medical examinations in a foreign State, has a system been implemented to ensure:\na) the proper and valid designation of the foreign medical examiners; and\nb) the proper surveillance of the foreign medical examiners?",
       "guidance": [
         "1) Check the system in place.",
         "2) Check if foreign authorities are contacted or if they make available sufficient information.",
@@ -2528,7 +2528,7 @@
     {
       "pqNo": "3.655",
       "ce": "CE-6",
-      "question": "Has the State implemented a system for formally evaluating and re-evaluating the ability of:",
+      "question": "Has the State implemented a system for formally evaluating and re-evaluating the ability of:\na) aeroplane, airship, helicopter and powered-lift pilots;\nb) flight navigators required to use the radiotelephone;\nc) air traffic controllers; and\nd) aeronautical station operators to speak and understand the language used for radiotelephony communications at the level specified in Appendix 1 to Annex 1?",
       "guidance": [
         "1) Verify description and references of the system implemented to formally evaluate and/or re-evaluate all licence holders concerned by language proficiency requirements.",
         "2) Check the system for nominating/designating the person or organization performing the evaluation.",
@@ -2623,7 +2623,7 @@
     {
       "pqNo": "3.701",
       "ce": "CE-6",
-      "question": "Does the State:",
+      "question": "Does the State:\na) maintain a personal file for each applicant and licence holder, which contains all correspondence, applications, assessments, examination results and other licensing documentation; and\nb) ensure that the contents of the applicant’s file provide a progressive history of the applicant’s qualifications and the current status of the application?",
       "guidance": [
         "1) Evaluate filing system.",
         "2) Review filing procedures to confirm effective implementation."
@@ -2657,7 +2657,7 @@
     {
       "pqNo": "3.703",
       "ce": "CE-6",
-      "question": "Has the State implemented a system:",
+      "question": "Has the State implemented a system:\na) to ensure confidentiality and security of individual records; and\nb) for closing and archiving personal files and records?",
       "guidance": [
         "1) Review filing procedures.",
         "2) Evaluate system for maintaining confidentiality and control of access."
@@ -3328,7 +3328,7 @@
     {
       "pqNo": "3.853",
       "ce": "CE-5",
-      "question": "Have procedures been established:",
+      "question": "Have procedures been established:\n• for the issuance of air traffic controller licence and ratings; and/or\n• to ensure that knowledge, experience and skill requirements are met by air traffic controllers (ATCOs)?",
       "guidance": [
         "1) Review issuance procedures.",
         "2) Unlicensed State employees may operate as ATCOs on condition that they meet the same requirements for ATCOs as outlined in Annex 1, 4.4.1.",

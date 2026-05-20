@@ -30,7 +30,7 @@ export function PQCard({ pq }: { pq: ProtocolQuestion }) {
               </span>
             )}
           </div>
-          <p className="text-ink-100 text-sm leading-snug line-clamp-2">
+          <p className="text-ink-100 text-sm leading-snug line-clamp-2 whitespace-pre-line">
             {pq.question}
           </p>
         </div>
