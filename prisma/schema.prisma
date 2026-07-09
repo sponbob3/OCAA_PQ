@@ -42,6 +42,14 @@ model ProtocolQuestion {
   isATC                Boolean @default(false)
   amendmentDescription String?
 
+  // PEL sub-area gating. JSON-encoded array of FieldKey strings (subset
+  // of FCL, AW, ATC, MED, FOO, SMS, RPL) the admin has validated for
+  // this PQ. When NULL the app derives the enabled set from existing
+  // FieldSubmission rows (backwards compatibility for PQs that pre-date
+  // this feature). Once the admin enables/disables a sub-area, the
+  // explicit list is stored here.
+  enabledPelSubAreasJson String?
+
   // OCAA response fields (columns H-P in the source)
   status                 Status  @default(NOT_STARTED)
   statusOfImplementation String?
@@ -157,6 +165,7 @@ enum FieldKey {
   MED
   FOO
   SMS
+  RPL
   WORK_REQUIRED
   BRIEF_ON_WORK_REQUIRED
   INTERNAL_NOTES

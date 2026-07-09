@@ -1,7 +1,12 @@
 import { NextResponse } from "next/server";
 import type { FieldKey } from "@prisma/client";
 import { prisma } from "@/lib/db";
-import { getCurrentUser } from "@/lib/current-user";
+import { getCurrentUser, isAdmin } from "@/lib/current-user";
+import {
+  PEL_SUB_AREA_FIELD_KEYS,
+  isPelSubAreaField,
+  resolveEnabledPelSubAreas,
+} from "@/lib/pel";
 
 const VALID_FIELD_KEYS: FieldKey[] = [
   "STATUS_OF_IMPLEMENTATION",
@@ -13,6 +18,7 @@ const VALID_FIELD_KEYS: FieldKey[] = [
   "MED",
   "FOO",
   "SMS",
+  "RPL",
   "WORK_REQUIRED",
   "BRIEF_ON_WORK_REQUIRED",
   "INTERNAL_NOTES",
@@ -59,12 +65,52 @@ export async function POST(
 
   const user = await getCurrentUser();
 
+  // PEL sub-area submissions are admin-only. The composer hides the
+  // entry points for non-admins, but a hand-crafted POST would otherwise
+  // sneak past, so guard it server-side too.
+  if (isPelSubAreaField(fieldKey) && !isAdmin(user)) {
+    return NextResponse.json(
+      { error: "PEL sub-area inputs are admin-only" },
+      { status: 403 }
+    );
+  }
+
   const pq = await prisma.protocolQuestion.findUnique({
     where: { pqNo },
-    select: { id: true, status: true },
+    select: {
+      id: true,
+      status: true,
+      enabledPelSubAreasJson: true,
+    },
   });
   if (!pq) {
     return NextResponse.json({ error: "PQ not found" }, { status: 404 });
+  }
+
+  // For PEL sub-area writes, require the sub-area to be enabled on the
+  // PQ first. This forces the admin "select sub-areas for this PQ"
+  // step to happen explicitly rather than implicitly via a save.
+  if (isPelSubAreaField(fieldKey)) {
+    const existingPelKeys = await prisma.fieldSubmission.findMany({
+      where: { pqId: pq.id, fieldKey: { in: PEL_SUB_AREA_FIELD_KEYS } },
+      select: { fieldKey: true },
+      distinct: ["fieldKey"],
+    });
+    const enabled = new Set(
+      resolveEnabledPelSubAreas(
+        pq.enabledPelSubAreasJson,
+        existingPelKeys.map((s) => s.fieldKey)
+      )
+    );
+    if (!enabled.has(fieldKey)) {
+      return NextResponse.json(
+        {
+          error:
+            "This PEL sub-area is not enabled on this PQ. Enable it first.",
+        },
+        { status: 409 }
+      );
+    }
   }
 
   // If revisesIds were provided, make sure they really belong to the same

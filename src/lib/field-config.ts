@@ -85,6 +85,13 @@ export const FIELD_CONFIG: Record<FieldKey, FieldConfig> = {
     placeholder: "Responsible person",
     mode: "inline",
   },
+  RPL: {
+    key: "RPL",
+    label: "RPL",
+    sublabel: "Remote Pilot Licensing",
+    placeholder: "Responsible person",
+    mode: "inline",
+  },
   WORK_REQUIRED: {
     key: "WORK_REQUIRED",
     label: "Work required (recommendations)",
@@ -135,7 +142,7 @@ export const SECTION_GROUPS: Array<{
   },
   {
     title: "PEL sub-area responsibility",
-    fields: ["FCL", "AW", "ATC", "MED", "FOO", "SMS"],
+    fields: ["FCL", "AW", "ATC", "MED", "FOO", "SMS", "RPL"],
     layout: "quad",
   },
   {

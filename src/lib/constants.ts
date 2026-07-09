@@ -66,9 +66,11 @@ export const STATUS_ORDER: Status[] = [
   "COMPLETE",
 ];
 
-// The six PEL sub-areas (Sheet1 columns K-P in the source workbook,
-// under the merged "Responsible PEL Area" header). Each carries the
-// name of the OCAA person responsible for that sub-area on a PQ.
+// The PEL sub-areas. The first six (FCL, AW, ATC, MED, FOO, SMS) map
+// to Sheet1 columns K-P in the source workbook under the merged
+// "Responsible PEL Area" header. RPL was added in-app and is not
+// sourced from the workbook. Each entry carries the name of the OCAA
+// person responsible for that sub-area on a PQ.
 export const PEL_SUBAREAS = [
   { key: "fcl", label: "FCL", full: "Flight Crew Licensing" },
   { key: "aw", label: "AW", full: "Airworthiness personnel" },
@@ -76,4 +78,5 @@ export const PEL_SUBAREAS = [
   { key: "med", label: "MED", full: "Medical" },
   { key: "foo", label: "FOO", full: "Flight Operations Officer / Dispatcher" },
   { key: "sms", label: "SMS", full: "Safety Management Systems" },
+  { key: "rpl", label: "RPL", full: "Remote Pilot Licensing" },
 ] as const;

@@ -55,26 +55,39 @@ async function main() {
   console.log(`Seeding ${data.pqs.length} PQs for audit area ${data.metadata.audit_area}...`);
 
   for (const pq of data.pqs) {
-    const icaoFields = {
+    // Fields that always re-sync from the source workbook on every
+    // seed. These are pure ICAO content: if the workbook is updated
+    // we want the new question text / guidance / references to win.
+    const icaoTextFields = {
       auditArea: data.metadata.audit_area,
       ce: pq.ce,
       question: pq.question,
       guidanceJson: JSON.stringify(pq.guidance),
       icaoReferencesJson: JSON.stringify(pq.icaoReferences),
+      amendmentDescription: pq.amendmentDescription,
+    };
+
+    // PPQ and ATC are seeded on initial create only. Admins can flip
+    // these from the PQ detail page (PATCH /api/pqs/:pqNo/flags), and
+    // those manual overrides must survive subsequent reseeds. If a
+    // future workbook change needs to overwrite an admin flag, the
+    // admin can toggle it back through the UI or run a dedicated
+    // resync script.
+    const initialFlagFields = {
       isPPQ: pq.isPPQ,
       isATC: pq.isATC ?? false,
-      amendmentDescription: pq.amendmentDescription,
     };
 
     await prisma.protocolQuestion.upsert({
       where: { pqNo: pq.pqNo },
       create: {
         pqNo: pq.pqNo,
-        ...icaoFields,
+        ...icaoTextFields,
+        ...initialFlagFields,
         // Response-side fields intentionally omitted. Status defaults to
         // NOT_STARTED via the schema; all others default to null.
       },
-      update: icaoFields,
+      update: icaoTextFields,
     });
   }
 

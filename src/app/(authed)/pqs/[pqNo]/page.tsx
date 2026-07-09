@@ -5,12 +5,19 @@ import { prisma } from "@/lib/db";
 import { hydratePQ } from "@/lib/types";
 import { CE_DESCRIPTIONS, STATUS_META } from "@/lib/constants";
 import { SECTION_GROUPS } from "@/lib/field-config";
-import { getCurrentUser } from "@/lib/current-user";
+import { getCurrentUser, isAdmin } from "@/lib/current-user";
 import { FieldThread } from "@/components/FieldThread";
 import { toSubmissionView, type SubmissionView } from "@/lib/submissions";
 import { StatusSelect } from "@/components/StatusSelect";
 import { EvidenceLinks } from "@/components/EvidenceLinks";
 import { StatusBadge } from "@/components/StatusBadge";
+import { PQFlagToggles } from "@/components/PQFlagToggles";
+import { PelSubAreaPanel } from "@/components/PelSubAreaPanel";
+import {
+  PEL_SUB_AREA_FIELD_KEYS,
+  resolveEnabledPelSubAreas,
+} from "@/lib/pel";
+import { listPelSubAreaNames } from "@/lib/pel-names";
 import { ArrowLeft, RadioTower, Star, Clock, Download } from "lucide-react";
 
 export const dynamic = "force-dynamic";
@@ -47,6 +54,7 @@ export default async function PQDetailPage({
 
   const pq = hydratePQ(row);
   const currentUser = await getCurrentUser();
+  const admin = isAdmin(currentUser);
 
   // Bucket submissions by field so each FieldThread gets only its own slice.
   const byField = new Map<FieldKey, SubmissionView[]>();
@@ -55,6 +63,23 @@ export default async function PQDetailPage({
     list.push(toSubmissionView(sub));
     byField.set(sub.fieldKey, list);
   }
+
+  // PEL sub-area gating: which sub-areas are enabled on this PQ. When
+  // the admin has never edited the list, the resolver falls back to
+  // "anything that already has a submission" so initial-template PQs
+  // keep showing what was imported from the workbook.
+  const enabledPelSubAreas = resolveEnabledPelSubAreas(
+    row.enabledPelSubAreasJson,
+    PEL_SUB_AREA_FIELD_KEYS.filter((k) => (byField.get(k)?.length ?? 0) > 0)
+  );
+  const pelSubmissions: Partial<Record<FieldKey, SubmissionView[]>> = {};
+  for (const k of PEL_SUB_AREA_FIELD_KEYS) {
+    pelSubmissions[k] = byField.get(k) ?? [];
+  }
+  // Single shared query for the typeahead. Cheap enough to run on each
+  // page render; the data set is small and the result fits in a tiny
+  // JSON payload that flows down through props.
+  const pelNameSuggestions = await listPelSubAreaNames();
 
   return (
     <div className="max-w-4xl">
@@ -72,17 +97,31 @@ export default async function PQDetailPage({
           <span className="px-2 py-0.5 rounded bg-white/5 text-ink-200 text-xs font-medium border border-white/5">
             {pq.ce} · {CE_DESCRIPTIONS[pq.ce] ?? ""}
           </span>
-          {pq.isPPQ && (
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 text-xs font-medium border border-amber-400/25">
-              <Star size={10} className="fill-amber-400 text-amber-400" />
-              PPQ · Priority
-            </span>
-          )}
-          {pq.isATC && (
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-sky-500/10 text-sky-300 text-xs font-medium border border-sky-400/25">
-              <RadioTower size={10} />
-              ATC
-            </span>
+          {/* For admins we render interactive toggles so PPQ/ATC can be
+              attributed or removed without leaving the page. Non-admin
+              viewers keep the read-only badges and only see them when
+              the flag is actually set. */}
+          {admin ? (
+            <PQFlagToggles
+              pqNo={pq.pqNo}
+              isPPQ={pq.isPPQ}
+              isATC={pq.isATC}
+            />
+          ) : (
+            <>
+              {pq.isPPQ && (
+                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 text-xs font-medium border border-amber-400/25">
+                  <Star size={10} className="fill-amber-400 text-amber-400" />
+                  PPQ · Priority
+                </span>
+              )}
+              {pq.isATC && (
+                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-sky-500/10 text-sky-300 text-xs font-medium border border-sky-400/25">
+                  <RadioTower size={10} />
+                  ATC
+                </span>
+              )}
+            </>
           )}
           <StatusBadge status={pq.status} />
         </div>
@@ -159,55 +198,80 @@ export default async function PQDetailPage({
         </div>
 
         <div className="space-y-8">
-          {SECTION_GROUPS.map((group, gi) => (
-            <div key={group.title}>
-              {/* Between subsections: a very thin, "incomplete" rule that
-                  fades in on both ends so it doesn't draw too hard a
-                  line across the panel. Suppressed for the first group
-                  so the heading sits flush under the status selector. */}
-              {gi > 0 && (
-                <div
-                  aria-hidden
-                  className="h-px bg-gradient-to-r from-transparent via-white/12 to-transparent mb-6"
-                />
-              )}
-              {/* Heading: bold but restrained — gray text with a solid
-                  brand accent bar so the label reads as a section tag
-                  rather than competing with field content. */}
-              <div className="flex items-center gap-3 mb-3">
-                <span
-                  aria-hidden
-                  className="inline-block w-[3px] h-4 rounded-full bg-brand-400"
-                />
-                <div className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-300">
-                  {group.title}
+          {SECTION_GROUPS.map((group, gi) => {
+            const isPelGroup = group.fields.some((f) =>
+              PEL_SUB_AREA_FIELD_KEYS.includes(f)
+            );
+            return (
+              <div key={group.title}>
+                {/* Between subsections: a very thin, "incomplete" rule that
+                    fades in on both ends so it doesn't draw too hard a
+                    line across the panel. Suppressed for the first group
+                    so the heading sits flush under the status selector. */}
+                {gi > 0 && (
+                  <div
+                    aria-hidden
+                    className="h-px bg-gradient-to-r from-transparent via-white/12 to-transparent mb-6"
+                  />
+                )}
+                <div className="flex items-center gap-3 mb-3">
+                  <span
+                    aria-hidden
+                    className="inline-block w-[3px] h-4 rounded-full bg-brand-400"
+                  />
+                  <div className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-300">
+                    {group.title}
+                  </div>
+                  {isPelGroup && (
+                    <span
+                      className="ml-1 inline-flex items-center text-[10px] uppercase tracking-[0.12em] text-ink-500 border border-white/5 rounded px-1.5 py-0.5"
+                      title="PEL sub-areas are admin-only and per-PQ"
+                    >
+                      Admin only
+                    </span>
+                  )}
                 </div>
-              </div>
-              <div
-                className={
-                  group.layout === "pair"
-                    ? "grid grid-cols-1 md:grid-cols-2 gap-3"
-                    : group.layout === "quad"
-                      ? "grid grid-cols-1 md:grid-cols-2 gap-3"
-                      : "space-y-3"
-                }
-              >
-                {group.fields.map((fieldKey) => (
-                  <FieldThread
-                    key={fieldKey}
+                {isPelGroup ? (
+                  <PelSubAreaPanel
                     pqNo={pq.pqNo}
-                    fieldKey={fieldKey}
-                    submissions={byField.get(fieldKey) ?? []}
                     currentUser={{
                       id: currentUser.id,
                       name: currentUser.name,
                       role: currentUser.role,
                     }}
+                    isAdmin={admin}
+                    initialEnabled={enabledPelSubAreas}
+                    submissionsByField={pelSubmissions}
+                    nameSuggestions={pelNameSuggestions}
                   />
-                ))}
+                ) : (
+                  <div
+                    className={
+                      group.layout === "pair"
+                        ? "grid grid-cols-1 md:grid-cols-2 gap-3"
+                        : group.layout === "quad"
+                          ? "grid grid-cols-1 md:grid-cols-2 gap-3"
+                          : "space-y-3"
+                    }
+                  >
+                    {group.fields.map((fieldKey) => (
+                      <FieldThread
+                        key={fieldKey}
+                        pqNo={pq.pqNo}
+                        fieldKey={fieldKey}
+                        submissions={byField.get(fieldKey) ?? []}
+                        currentUser={{
+                          id: currentUser.id,
+                          name: currentUser.name,
+                          role: currentUser.role,
+                        }}
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 

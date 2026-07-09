@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useId, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import {
   Check,
@@ -24,16 +24,31 @@ export type { SubmissionView };
 
 // Props for an individual thread. The current user is passed in so the
 // component can gate admin-only controls without a round-trip.
+//
+// `canWrite` (default true) lets a caller hide every write entry point.
+// PEL sub-area threads use this to keep the composer admin-only without
+// touching every individual button: when false, "New" / "Revise" /
+// "Draft" all disappear and the in-log "Revise from here" button is
+// suppressed too. (Approval and delete are already admin-gated.)
+//
+// `nameSuggestions` turns the inline composer into a native HTML
+// datalist typeahead. The list is rendered for every author and lets
+// admins pick a known name in one click while still allowing free
+// typing — used for the responsible-person inputs.
 export function FieldThread({
   pqNo,
   fieldKey,
   submissions: initialSubmissions,
   currentUser,
+  canWrite = true,
+  nameSuggestions,
 }: {
   pqNo: string;
   fieldKey: FieldKey;
   submissions: SubmissionView[];
   currentUser: { id: string; name: string | null; role: Role };
+  canWrite?: boolean;
+  nameSuggestions?: string[];
 }) {
   const cfg = fieldConfig(fieldKey);
 
@@ -51,6 +66,9 @@ export function FieldThread({
   const [pending, startTransition] = useTransition();
 
   const router = useRouter();
+  // Stable id for the datalist <-> input pairing when nameSuggestions
+  // is in play. Falls back to a useless placeholder when not used.
+  const datalistId = useId();
 
   const latest = submissions[0];
   const prior = submissions.slice(1);
@@ -234,41 +252,42 @@ export function FieldThread({
         {/* Button hierarchy: "New" is the primary action (bright brand
             fill, slightly larger click target). "Revise" is the muted
             secondary — always available but visually deferring to New
-            so drafting a fresh thought is the default. */}
-        <div className="flex items-center gap-1.5 shrink-0">
-          {latest && (
+            so drafting a fresh thought is the default. Hidden entirely
+            when canWrite is false (read-only threads still show their
+            content, just without entry points to edit it). */}
+        {canWrite && (
+          <div className="flex items-center gap-1.5 shrink-0">
+            {latest && (
+              <button
+                type="button"
+                onClick={openNewComposer}
+                title="Start a new submission (not tied to any previous one)"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-white bg-brand-500 hover:bg-brand-400 border border-brand-300/60 rounded-md px-3 py-1.5 transition-colors shadow-[0_0_0_1px_rgba(59,130,246,0.35)_inset,0_1px_2px_rgba(0,0,0,0.3)]"
+              >
+                <Plus size={13} strokeWidth={2.5} />
+                New
+              </button>
+            )}
             <button
               type="button"
-              onClick={openNewComposer}
-              title="Start a new submission (not tied to any previous one)"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-white bg-brand-500 hover:bg-brand-400 border border-brand-300/60 rounded-md px-3 py-1.5 transition-colors shadow-[0_0_0_1px_rgba(59,130,246,0.35)_inset,0_1px_2px_rgba(0,0,0,0.3)]"
+              onClick={openReviseComposer}
+              title={
+                latest
+                  ? "Revise the latest submission"
+                  : "Draft the first submission"
+              }
+              className={cn(
+                "inline-flex items-center gap-1 rounded transition-colors",
+                latest
+                  ? "text-[11px] text-ink-400 hover:text-ink-100 border border-white/10 bg-white/[0.015] hover:bg-white/[0.04] px-2 py-1"
+                  : "text-xs font-semibold text-white bg-brand-500 hover:bg-brand-400 border border-brand-300/60 rounded-md px-3 py-1.5 shadow-[0_0_0_1px_rgba(59,130,246,0.35)_inset,0_1px_2px_rgba(0,0,0,0.3)]"
+              )}
             >
-              <Plus size={13} strokeWidth={2.5} />
-              New
+              <MessageSquarePlus size={latest ? 11 : 13} />
+              {latest ? "Revise" : "Draft"}
             </button>
-          )}
-          <button
-            type="button"
-            onClick={openReviseComposer}
-            title={
-              latest
-                ? "Revise the latest submission"
-                : "Draft the first submission"
-            }
-            className={cn(
-              "inline-flex items-center gap-1 rounded transition-colors",
-              // First-ever submission gets the primary treatment since
-              // there is no "New" button yet; afterwards Revise is
-              // secondary to New.
-              latest
-                ? "text-[11px] text-ink-400 hover:text-ink-100 border border-white/10 bg-white/[0.015] hover:bg-white/[0.04] px-2 py-1"
-                : "text-xs font-semibold text-white bg-brand-500 hover:bg-brand-400 border border-brand-300/60 rounded-md px-3 py-1.5 shadow-[0_0_0_1px_rgba(59,130,246,0.35)_inset,0_1px_2px_rgba(0,0,0,0.3)]"
-            )}
-          >
-            <MessageSquarePlus size={latest ? 11 : 13} />
-            {latest ? "Revise" : "Draft"}
-          </button>
-        </div>
+          </div>
+        )}
       </header>
 
       {/* Current (latest) display */}
@@ -279,12 +298,16 @@ export function FieldThread({
             mode={cfg.mode}
             approvedIsLatest={Boolean(approvedIsLatest)}
             isAdmin={isAdmin}
+            canWrite={canWrite}
             onRevise={() => openComposerForRevision(latest)}
             onApprove={() => void toggleApprove(latest)}
             onDelete={() => void deleteSubmission(latest)}
           />
         ) : (
-          <EmptyState placeholder={cfg.placeholder} />
+          <EmptyState
+            placeholder={cfg.placeholder}
+            readOnlyLabel={!canWrite}
+          />
         )}
 
         {/* Approved-but-not-latest callout */}
@@ -300,7 +323,7 @@ export function FieldThread({
       </div>
 
       {/* Composer */}
-      {composerOpen && (
+      {composerOpen && canWrite && (
         <Composer
           mode={cfg.mode}
           placeholder={cfg.placeholder}
@@ -315,6 +338,8 @@ export function FieldThread({
           authorRole={currentUser.role}
           error={error}
           pending={pending}
+          nameSuggestions={nameSuggestions}
+          datalistId={datalistId}
         />
       )}
 
@@ -368,6 +393,7 @@ export function FieldThread({
                     })
                   }
                   isAdmin={isAdmin}
+                  canWrite={canWrite}
                   onRevise={() => openComposerForRevision(s)}
                   onApprove={() => void toggleApprove(s)}
                   onDelete={() => void deleteSubmission(s)}
@@ -386,6 +412,7 @@ function CurrentDisplay({
   mode,
   approvedIsLatest,
   isAdmin,
+  canWrite,
   onRevise,
   onApprove,
   onDelete,
@@ -394,6 +421,7 @@ function CurrentDisplay({
   mode: "block" | "inline";
   approvedIsLatest: boolean;
   isAdmin: boolean;
+  canWrite: boolean;
   onRevise: () => void;
   onApprove: () => void;
   onDelete: () => void;
@@ -422,6 +450,7 @@ function CurrentDisplay({
           isAdmin={isAdmin}
           isApproved={isApproved}
           canDelete={!submission.isInitial}
+          canWrite={canWrite}
           onRevise={onRevise}
           onApprove={onApprove}
           onDelete={onDelete}
@@ -452,6 +481,7 @@ function LogEntry({
   expanded,
   onToggle,
   isAdmin,
+  canWrite,
   onRevise,
   onApprove,
   onDelete,
@@ -461,6 +491,7 @@ function LogEntry({
   expanded: boolean;
   onToggle: () => void;
   isAdmin: boolean;
+  canWrite: boolean;
   onRevise: () => void;
   onApprove: () => void;
   onDelete: () => void;
@@ -527,6 +558,7 @@ function LogEntry({
           isAdmin={isAdmin}
           isApproved={isApproved}
           canDelete={!submission.isInitial}
+          canWrite={canWrite}
           onRevise={onRevise}
           onApprove={onApprove}
           onDelete={onDelete}
@@ -545,14 +577,16 @@ function LogEntry({
             {submission.value}
           </div>
           <div className="mt-2 flex items-center gap-2 flex-wrap">
-            <button
-              type="button"
-              onClick={onRevise}
-              className="inline-flex items-center gap-1 text-[11px] text-ink-300 hover:text-ink-100 border border-white/5 hover:bg-white/[0.04] rounded px-2 py-1 transition-colors"
-            >
-              <MessageSquarePlus size={11} />
-              Revise from here
-            </button>
+            {canWrite && (
+              <button
+                type="button"
+                onClick={onRevise}
+                className="inline-flex items-center gap-1 text-[11px] text-ink-300 hover:text-ink-100 border border-white/5 hover:bg-white/[0.04] rounded px-2 py-1 transition-colors"
+              >
+                <MessageSquarePlus size={11} />
+                Revise from here
+              </button>
+            )}
             {isAdmin && (
               <button
                 type="button"
@@ -611,6 +645,8 @@ function Composer({
   authorRole,
   error,
   pending,
+  nameSuggestions,
+  datalistId,
 }: {
   mode: "block" | "inline";
   placeholder?: string;
@@ -625,7 +661,15 @@ function Composer({
   authorRole: Role;
   error: string | null;
   pending: boolean;
+  nameSuggestions?: string[];
+  datalistId?: string;
 }) {
+  // Combobox mode: an inline-mode field given a list of known names.
+  // Renders as a single-line <input> with a paired <datalist>, which
+  // gives us a native typeahead (filter while typing, click to pick)
+  // and still allows free typing for new names.
+  const useCombobox =
+    mode === "inline" && nameSuggestions && nameSuggestions.length > 0;
   return (
     <div className="mx-5 mb-4 rounded-md border border-brand-400/30 bg-brand-500/[0.04] overflow-hidden">
       <div className="flex items-center gap-2 px-3 py-1.5 border-b border-brand-400/20 bg-brand-500/[0.06]">
@@ -640,22 +684,56 @@ function Composer({
           </span>
         )}
         <div className="ml-auto text-[10px] text-ink-400 tabular-nums">
-          <kbd className="font-mono">Enter</kbd> newline ·{" "}
-          <kbd className="font-mono">⌘/Ctrl+Enter</kbd> submit
+          {useCombobox ? (
+            <>
+              <kbd className="font-mono">↓</kbd> open list ·{" "}
+              <kbd className="font-mono">Enter</kbd> submit
+            </>
+          ) : (
+            <>
+              <kbd className="font-mono">Enter</kbd> newline ·{" "}
+              <kbd className="font-mono">⌘/Ctrl+Enter</kbd> submit
+            </>
+          )}
         </div>
       </div>
-      <textarea
-        autoFocus
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        onKeyDown={onKeyDown}
-        rows={mode === "inline" ? 1 : (rows ?? 3)}
-        placeholder={placeholder}
-        className={cn(
-          "w-full px-3 py-2 text-sm bg-transparent text-ink-100 placeholder:text-ink-500 focus:outline-none resize-y",
-          mode === "inline" && "font-mono"
-        )}
-      />
+      {useCombobox ? (
+        <>
+          <input
+            autoFocus
+            type="text"
+            list={datalistId}
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                e.preventDefault();
+                onSubmit();
+              }
+            }}
+            placeholder={placeholder}
+            className="w-full px-3 py-2 text-sm bg-transparent text-ink-100 placeholder:text-ink-500 focus:outline-none font-mono"
+          />
+          <datalist id={datalistId}>
+            {nameSuggestions!.map((name) => (
+              <option key={name} value={name} />
+            ))}
+          </datalist>
+        </>
+      ) : (
+        <textarea
+          autoFocus
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          onKeyDown={onKeyDown}
+          rows={mode === "inline" ? 1 : (rows ?? 3)}
+          placeholder={placeholder}
+          className={cn(
+            "w-full px-3 py-2 text-sm bg-transparent text-ink-100 placeholder:text-ink-500 focus:outline-none resize-y",
+            mode === "inline" && "font-mono"
+          )}
+        />
+      )}
       <div className="flex items-center justify-between gap-2 px-3 py-2 border-t border-brand-400/20 bg-ink-950/30">
         <div className="min-w-0 text-[11px] text-rose-300">
           {error && <span>{error}</span>}
@@ -684,10 +762,18 @@ function Composer({
   );
 }
 
-function EmptyState({ placeholder }: { placeholder?: string }) {
+function EmptyState({
+  placeholder,
+  readOnlyLabel,
+}: {
+  placeholder?: string;
+  readOnlyLabel?: boolean;
+}) {
   return (
     <div className="rounded-md border border-dashed border-white/5 bg-white/[0.015] px-4 py-3 text-sm text-ink-500 italic">
-      No submissions yet{placeholder ? ` · ${placeholder}` : ""}
+      {readOnlyLabel
+        ? "Awaiting admin input"
+        : `No submissions yet${placeholder ? ` · ${placeholder}` : ""}`}
     </div>
   );
 }
@@ -750,6 +836,7 @@ function InlineActions({
   isAdmin,
   isApproved,
   canDelete = true,
+  canWrite = true,
   onRevise,
   onApprove,
   onDelete,
@@ -758,6 +845,7 @@ function InlineActions({
   isAdmin: boolean;
   isApproved: boolean;
   canDelete?: boolean;
+  canWrite?: boolean;
   onRevise: () => void;
   onApprove: () => void;
   onDelete: () => void;
@@ -769,22 +857,24 @@ function InlineActions({
   const pad = compact ? "px-1.5 py-1" : "px-2 py-1";
   return (
     <div className="flex items-center gap-1 shrink-0">
-      <button
-        type="button"
-        onClick={(e) => {
-          e.stopPropagation();
-          onRevise();
-        }}
-        title="Revise from this submission"
-        className={cn(
-          btn,
-          pad,
-          "text-[11px] text-ink-300 hover:text-brand-200 border-white/5 hover:border-brand-400/30 hover:bg-brand-500/10"
-        )}
-      >
-        <MessageSquarePlus size={iconSize} />
-        {!compact && "Revise"}
-      </button>
+      {canWrite && (
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            onRevise();
+          }}
+          title="Revise from this submission"
+          className={cn(
+            btn,
+            pad,
+            "text-[11px] text-ink-300 hover:text-brand-200 border-white/5 hover:border-brand-400/30 hover:bg-brand-500/10"
+          )}
+        >
+          <MessageSquarePlus size={iconSize} />
+          {!compact && "Revise"}
+        </button>
+      )}
       {isAdmin && (
         <button
           type="button"

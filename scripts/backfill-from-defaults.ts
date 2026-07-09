@@ -233,6 +233,7 @@ async function main() {
     MED: 0,
     FOO: 0,
     SMS: 0,
+    RPL: 0,
     WORK_REQUIRED: 0,
     BRIEF_ON_WORK_REQUIRED: 0,
     INTERNAL_NOTES: 0,
